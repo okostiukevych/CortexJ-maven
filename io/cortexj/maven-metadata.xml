@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>CortexJ Maven Plugin</name>
+      <prefix>cortexj</prefix>
+      <artifactId>cortexj-maven-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>io.cortexj</groupId>
+    <artifactId>cortexj-parent</artifactId>
+    <version>1.0.0-RC1</version>
+    <relativePath>../../pom.xml</relativePath>
+  </parent>
+  <artifactId>cortexj-train-djl</artifactId>
+  <name>CortexJ Train DJL</name>
+  <description>TrainingBackend wrapping DJL training capability (ADR-021). Honest unavailability when no training engine is installed. Core never depends on this module.</description>
+  <properties>
+    <cortexj.shared.release>17</cortexj.shared.release>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>io.cortexj</groupId>
+      <artifactId>cortexj-train-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>ai.djl</groupId>
+      <artifactId>api</artifactId>
+      <version>0.39.0</version>
+    </dependency>
+    <!-- adapter export needs the PEFT module (compile, optional for consumers) -->
+    <dependency>
+      <groupId>io.cortexj</groupId>
+      <artifactId>cortexj-train-peft</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <!-- checkpoint save/resume needs the distributed module -->
+    <dependency>
+      <groupId>io.cortexj</groupId>
+      <artifactId>cortexj-train-distributed</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <!-- the LLM LoRA path: datasets, model blocks, exact tokenization -->
+    <dependency>
+      <groupId>io.cortexj</groupId>
+      <artifactId>cortexj-train-data</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.cortexj</groupId>
+      <artifactId>cortexj-train-djl-models</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.cortexj</groupId>
+      <artifactId>cortexj-train-djl-models</artifactId>
+      <version>${project.version}</version>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+    <!-- the shared safetensors container fixture is not transitive through
+         the djl-models test-jar: test scope never travels -->
+    <dependency>
+      <groupId>io.cortexj</groupId>
+      <artifactId>cortexj-convert-safetensors</artifactId>
+      <version>${project.version}</version>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+    <!-- live-lane HTTP reference client (llama-server /completion) -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <!-- end-to-end lane: ADR-029 merge + llamacpp Runtime reference -->
+    <dependency>
+      <groupId>io.cortexj</groupId>
+      <artifactId>cortexj-convert-lora</artifactId>
+      <version>${project.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.cortexj</groupId>
+      <artifactId>cortexj-runtime-llamacpp</artifactId>
+      <version>${project.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <profiles>
+    <!-- Opt-in live lane: the DJL PyTorch engine (native) makes the
+         engine-gated contract tests execute instead of skipping loudly. -->
+    <profile>
+      <id>live-engine</id>
+      <dependencies>
+        <dependency>
+          <groupId>ai.djl.pytorch</groupId>
+          <artifactId>pytorch-engine</artifactId>
+          <version>0.39.0</version>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>ai.djl.pytorch</groupId>
+          <artifactId>pytorch-native-cpu</artifactId>
+          <classifier>osx-aarch64</classifier>
+          <version>2.7.1</version>
+          <scope>test</scope>
+        </dependency>
+      </dependencies>
+    </profile>
+  </profiles>
+</project>
