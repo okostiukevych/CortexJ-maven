@@ -1,0 +1,1052 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.5",
+  "serialNumber" : "urn:uuid:8b773165-4e00-373d-a6b5-57d71e3c77c9",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-10-25T02:15:00Z",
+    "lifecycles" : [
+      {
+        "phase" : "build"
+      }
+    ],
+    "tools" : {
+      "components" : [
+        {
+          "type" : "library",
+          "author" : "OWASP Foundation",
+          "group" : "org.cyclonedx",
+          "name" : "cyclonedx-maven-plugin",
+          "version" : "2.9.1",
+          "description" : "CycloneDX Maven plugin",
+          "hashes" : [
+            {
+              "alg" : "MD5",
+              "content" : "9c7a565cf28cce58557d0c621c5ea4b1"
+            },
+            {
+              "alg" : "SHA-1",
+              "content" : "be882d5a22050bfa9d19090b1420c188617d0e1c"
+            },
+            {
+              "alg" : "SHA-256",
+              "content" : "698e0f37184a5b28c245c4065fd036dfce253b52f82fbb7113d81d36326cc249"
+            },
+            {
+              "alg" : "SHA-512",
+              "content" : "c0f0b11026858166f872a2eb54719492e5cecaa0bc9cd6b30b3ecb4a174eed220f4a1b5829d18d6734128e778d3cb3db7ffed177c92866133129cb29081814a0"
+            },
+            {
+              "alg" : "SHA-384",
+              "content" : "d80964707dfe5caca8c70521d5066f57589304c0a657e6fbc7c0614ea0fc7b3b3dbe7778361eee0f54ba111e9cb0ffcb"
+            },
+            {
+              "alg" : "SHA3-384",
+              "content" : "80bc3a275d9514bc457461ff52a72add8c7ecbbc01d8912efce57139016c544ee776981851be0a58fa977ab4221f703f"
+            },
+            {
+              "alg" : "SHA3-256",
+              "content" : "142317d6f245390f4fd2d0c100b16281b8dfc5c0c2cff86943bdcc97039cb699"
+            },
+            {
+              "alg" : "SHA3-512",
+              "content" : "af0fb9137c90b65d1a07f72e4d51ae509956cdb8800f35c961b037cdda1fe4a14ce3b496cef71ba85f1621affcfe29cd42704ae4191ff0b090a9602087c8997b"
+            }
+          ]
+        }
+      ]
+    },
+    "component" : {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-data-tribuo@1.0.0?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-data-tribuo",
+      "version" : "1.0.0",
+      "description" : "Tribuo adapter over the Data API (ADR-019): read a Tribuo data source as a CortexJ frame. The library never leaks into data-api signatures.",
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-data-tribuo@1.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/data/cortexj-data-tribuo"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/data/cortexj-data-tribuo"
+        }
+      ]
+    },
+    "properties" : [
+      {
+        "name" : "maven.goal",
+        "value" : "makeBom"
+      },
+      {
+        "name" : "maven.scopes",
+        "value" : "compile,provided,runtime,system"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-data-api@1.0.0?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-data-api",
+      "version" : "1.0.0",
+      "description" : "Thin tabular contracts: Schema/Column/Frame/Dataset/Split/Fingerprint (ADR-019). Java 17, no IO dependencies.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "d8572a01ce6207f145cf2ecd227608e4"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "df1f0f686895c2c7fcc4d460c91d89f6ad44e593"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "60c5454ebff5b3213b6b5688f1b5f2ad8a3f18554acc86a1d0678255b264b972"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "30e27bde36c773a824325d44cfc71f2a7479ece884a41ba5b8d66c98a908bc8d2087b18454bf9fbf827b0e32f5979e9f2ee464c7f874ace76408dc9c55a10d44"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "9dc564af88797c7ae2d6f1c244b81d2388c80d20f778aa3fbeffc25e8289aea6a49fcd6ebafaf9606d2f37da02abe2b3"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "0e22d0cef698898769b3b353406a884b29bf420a63a9b436ef4685567db75c0f90bfca4fd00b107ffd70f9d684e727e6"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "f2cce9b5ccaccf03ea0101735bf67c3ffa916884cc9df426bd9b2da09319dfe7"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "28d225908eb8ba31f9722824357085e6d02a879037218a3f196c965e1c8ed2d3cc7376f691a54a054fa9982d76815524a5a77382701a6ece1300054e1f0fd75d"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-data-api@1.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/data/cortexj-data-api"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/data/cortexj-data-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.tribuo/tribuo-core@4.3.2?type=jar",
+      "group" : "org.tribuo",
+      "name" : "tribuo-core",
+      "version" : "4.3.2",
+      "description" : "A Machine Learning library for Java.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "6ef02f05ee541f1e2585b780d61ac8f7"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "462218249533fd6a4659fc96619d7d1efa302842"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "f8ef43aa36f37aca4c346cd1e62e29e49e9c13860b4e56c9cd05e2a35fd85f34"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "d2d6ee9e705d85731f21e43c28687c511252ba342c2dcf4b023f4fa9f02c73000a9025598da2c532f6e1a2a45ecdaf78e1c7183c46c10b03a81f38115f5f8791"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "b55b5e6986c4b8a7522557d75657e50003cd107bf93d6469af907430cad3d1f6cdd505cf8d2d5d93571b65f79c992e47"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "d9ebc64a8ae35156be4e0848971d7ca39a502577c18dd756f2273103c14f056e7f35324e7ad2cf0ab6466b1996d59c26"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "cdbcf2519116095c46920798e18bce8b016ce2d989ed3c75d0847fa01428b5f4"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "2065148ca5177eacbac8f3377f2d57171f4d63692f273cc81ab293215db8c01a2f0aa9589dc3b6957d508546fc54890665f91f36a26b6ce9b80a6ba176c20e07"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.tribuo/tribuo-core@4.3.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://www.tribuo.org/tribuo-core"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/oracle/tribuo/tree/main/tribuo-core"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.oracle.labs.olcut/olcut-core@5.3.1?type=jar",
+      "group" : "com.oracle.labs.olcut",
+      "name" : "olcut-core",
+      "version" : "5.3.1",
+      "description" : "The Oracle Labs Configuration and Utility Toolkit.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "cc545882e74f9d0e4a94521343694003"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "63b05ef0b189729c99ef782020e5d88d1f0d1e0f"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "40ad9bed027d6558776893c2a059134ee7f744d38cdea678f5931241764ebf87"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "058e33fb587708095aaff9136d24c7ff5d744215d92e8a254a24c351c9ff7045d13802d8643df2c9240988a289b81affa992002d9c059ff1b31f42553af967e0"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "59654a3cf68ab5883a05d2dc87f5ad30488b6a8a703b1bf0497bd97dc7c3504f2652cad3a698f2fb01b54b15f9c056b3"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "9f6ba8c649a179c5bbb5bbf0ee47082215bfdecf764899a1022fd7ac7adf9a87b0a74fe27c0f99cd325ee4180570b373"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "2372f6e8c159ed4ec191b30a0e737a7c6705d5db9935b8f4c1d4b80dc81737ec"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "84d265e77cf017f641ff007c03149bf40ef0faa459f2fdb6c00ab6cd246cb82c4cc4497f96e1b4e29159d05bd4edc22e57d1f2a96ee36a8f84ce9a3691ddaae0"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "BSD-2-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.oracle.labs.olcut/olcut-core@5.3.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/oracle/olcut/olcut-core"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/oracle/olcut/olcut-core"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.jline/jline-terminal@3.27.1?type=jar",
+      "group" : "org.jline",
+      "name" : "jline-terminal",
+      "version" : "3.27.1",
+      "description" : "JLine",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "9aeefd68e0bbf356a07178ff9ac46831"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "49c957485701003855547d0d262a80bdced17613"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "42b7b756506bca98b505938426a35c99082f7819c333ed25bd4114bfb0e3b5f2"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "65fdff91ddcc80eae3d1538583f50a4b39576d73f9166617acfcc60ae9db1fdd76689dac09c46d26c3495774e5ac72f48c16022b2c2a819fc07a4a4fac75deae"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "c244bf54312ad3b7833d8c7dd58bbbdb8c12f46a661443d4c619a245222e1bbc6e6d84b44735307fb505bd4e6107a367"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "cfcd13dbc475c9b6b4ffc0074fc9cb26df52c85936c9b00ee629dd2f82198474ad2b5a5f21b8b9f4deb4fc40623b6bbf"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "fef65cd84e2fcdd5ab2242a79219632239ee6a06cfaad36b320c13d047beb5df"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "09d1601dbdfa977e291ba956a729cf87d959e12bfa6eb1827d29b0a985a670f1e21f6714d8984598572e55a2ed88257c2a891085582a4d5a5651754583d0526d"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "BSD-4-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.jline/jline-terminal@3.27.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/jline/jline3/jline-terminal"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/jline/jline3/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://groups.google.com/group/jline-users"
+        },
+        {
+          "type" : "vcs",
+          "url" : "http://github.com/jline/jline3/jline-terminal"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.jline/jline-native@3.27.1?type=jar",
+      "group" : "org.jline",
+      "name" : "jline-native",
+      "version" : "3.27.1",
+      "description" : "JLine",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "65364ba517a0891778138cd4a92aa0bb"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d0b198908023385a089379a1c854aadc7a7dd99b"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "636646da40413e74963b3f4b40c9c5dcfb42f3d0ecf1b93d6ddf5c895effe422"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "0858e666eb28ef26849f3ee4b96d1f3f0661aa9bcd35a0c89fb2d52d425313f20d856f9e23e241bda692c3a95637d66e9c8bb66f1221ff70fb3231f714ac88ad"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "caa30ffcd5ff95dae79c5618fb8d475543ae4fe118bc3f92992040b2cf6defe58f4aa521e5fb9c0f26d6694317f841ad"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "a08818baebb2b86bd182b5f1fc9b75a1d948553d8851b6793ce0bbe11f7bcd4bd904a9fd00d15df36a03df952462f017"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "7286513e1fe272bec49b448965a389e3ec77ccd45efd47ff7b69059fc83a1eaa"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "3a4161108c1b26574367d6783bb28bd07806cbe7aa55ff3989baf9d2bb52b41e1dbfb61f4adf2bc8391816d1bda5dccecd83121516b590e5ba547364c780ad1b"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "BSD-4-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.jline/jline-native@3.27.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/jline/jline3/jline-native"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/jline/jline3/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://groups.google.com/group/jline-users"
+        },
+        {
+          "type" : "vcs",
+          "url" : "http://github.com/jline/jline3/jline-native"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.jline/jline-reader@3.27.1?type=jar",
+      "group" : "org.jline",
+      "name" : "jline-reader",
+      "version" : "3.27.1",
+      "description" : "JLine",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "61e4a1ed7e6944c281815743ea096c43"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d7e63702fc88c4c838d333a90f3a2db4d5b88457"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "feddb180aabd05bfa04e013379f6938cf8f9faf1e5a342991762b8fcd3334578"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "0deecbf2f15414fd09e98befbe6784c8389b04df5f85ea67f4ba6da0c0099f65374df532ce9e3c77fa31f8448a111ec0e852160c0830a95885db48ec0594942b"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "19eba03a92bf410ba2d8e76ab3e07e28027598460dd4857f74100c3d7331bcb98d2e2502812a54aefcd6e645f52b796a"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "ad59960ee51266bf593b9186438168542f361261bfff52a1e02494f33157faf8bc522c76eb514e00d48f3556083f999f"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "58f366ee77160382abc870b284e0130947c121385ccb57f4bf60886426c7448d"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "8fddb37d0b7962a910b55c3d79da5f3f33ef7179323eaeb935e47b9f990a4d5006af023d95edb3d473002f5eaa6ec159799e55b01c7b9b6b23fce44c30f611a8"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "BSD-4-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.jline/jline-reader@3.27.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/jline/jline3/jline-reader"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/jline/jline3/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://groups.google.com/group/jline-users"
+        },
+        {
+          "type" : "vcs",
+          "url" : "http://github.com/jline/jline3/jline-reader"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.jline/jline-builtins@3.27.1?type=jar",
+      "group" : "org.jline",
+      "name" : "jline-builtins",
+      "version" : "3.27.1",
+      "description" : "JLine",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "4fe359feca1ac1f77b69fa74dd962c63"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "de8d19e5fdd7b932f3d8e23ecaa0c24a4897efa7"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "2d5a649201dc802afe5eb606c1830d7bfea550b4266db93672a4d7b54c8d8d87"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "65fe1085f054fca6ce4a8057e3feb68e3c101f60f9f75a591263a29ec047316806591bc0d487a8f3bf3d8b198b876d4cb61ab3e30efb5c3c2506ab1150c1f64b"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "2b81a67355352f359a7241d37b10fbc962a523d2e83e9b3f99fc3038f0214e43ec493c4d9aa96ae39e0c803226b9647f"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "3d71ae8d3b31bce8bba4f3d5355ff4af1c2d191efde71d12fc3189214995f2e4a53ba0a78e4bf3df54552cb30dcdade7"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "66bb7908b92b739a07a83125914fbda29138a7e2f2c8bed96823ab20d959d3e2"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "71fff252a9c4d20b83f3f8998492b1aef166d5849df5ef884eb9a33f48a422c863fe34633c910249186234187885e1c220608bbeeb39e76cf19612878d472626"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "BSD-4-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.jline/jline-builtins@3.27.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/jline/jline3/jline-builtins"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/jline/jline3/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://groups.google.com/group/jline-users"
+        },
+        {
+          "type" : "vcs",
+          "url" : "http://github.com/jline/jline3/jline-builtins"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.jline/jline-style@3.27.1?type=jar",
+      "group" : "org.jline",
+      "name" : "jline-style",
+      "version" : "3.27.1",
+      "description" : "JLine",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "89d704b82ebfd9e6ef7946c9c1c51beb"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "ba31c05b0e9de0b2ee5743d44fe579beb395cf63"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "3fb19871b25984d6983074205c7a4a139bfac2e6099b7b1ae8a48958b282313a"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "98d1c7a62a638df55a6f58dcddd6573d335a3e554894faa2503e5fe890929f28e291c8d62cdbbfdd0ad77951d74eb75b96e16c345594ad2483a789f96322b157"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "3e0de6799a99a8f6f17248ab497e6b95430bffa0acfb51e6f1d4cf3ab952ed86dea63b3c66b28b7b26d543cda9eadbc8"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "1a80f3ab5b3115a74c97d615adab345bf510c386f8d6639e64c690722973e89e176075117cbc6d3373ea5e792f687ff4"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "fcca577736e647c95546d34f342d86b190a8280ae8465fefaac1121990e5d3c0"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "bb577a8c360900ede6bc2ffea00ef0e92180bd3b9bf5298e62e3ac6af92bb1cfdfee15e9f598bee7abc1203705e0e3c0d8a6cbc679eb7409d5a14c883c282542"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "BSD-4-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.jline/jline-style@3.27.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/jline/jline3/jline-style"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/jline/jline3/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://groups.google.com/group/jline-users"
+        },
+        {
+          "type" : "vcs",
+          "url" : "http://github.com/jline/jline3/jline-style"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.jline/jline-terminal-jansi@3.27.1?type=jar",
+      "group" : "org.jline",
+      "name" : "jline-terminal-jansi",
+      "version" : "3.27.1",
+      "description" : "JLine",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "e64b2f1e251d74abb72d9c8922f830ee"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "f3a545b2f7126f3e21a46c1948a2c79b7a5ce101"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "996bcce8ea541d71f70eedfff9d107a48277f6557345e21d1f30c60e66484674"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "eb42a68b897f36ce2a3775b9f2457aaa33ef58df5ae7175156b6aa28fa57f3fe353f8bf18ad021e8cbfb76e5dd323832d5e1bef0a455e4106167a695d8d18fa8"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "1303849b407916034d4c28f7f3e8229a9acb94797ba5f8e1b48a0394321edf90ec869b3f0ab7225bc498ab9d04fe3fcb"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "121729fdf18962bfeba48dee1896c901d732881baa0abd1e953e9aad63c2fc0f60b35ca70b830bc17563769a6b719eba"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "227751ddbb64fb50328b716d49e7a5298660f90706de6679f4e683e513b695d4"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "53775d9f794116b763ce3a2dc306a61624f47105fdd6e51005de4efc6ea44b0a26d3ae305c9adc2b05bd8b72dfbbda0de142b72d25f255c36c578f4cd8c6ec35"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "BSD-4-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.jline/jline-terminal-jansi@3.27.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/jline/jline3/jline-terminal-jansi"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/jline/jline3/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://groups.google.com/group/jline-users"
+        },
+        {
+          "type" : "vcs",
+          "url" : "http://github.com/jline/jline3/jline-terminal-jansi"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.fusesource.jansi/jansi@2.4.1?type=jar",
+      "publisher" : "FuseSource, Corp.",
+      "group" : "org.fusesource.jansi",
+      "name" : "jansi",
+      "version" : "2.4.1",
+      "description" : "Jansi is a java library for generating and interpreting ANSI escape sequences.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "10c1033cc584325f020e2f9d231c0764"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d5774f204d990c9f5da2809b88f928515577beb4"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "2e5e775a9dc58ffa6bbd6aa6f099d62f8b62dcdeb4c3c3bbbe5cf2301bc2dcc1"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "2ab88a9e9eb01b72ce65c06694549fe1d46e0a78c802c6bd72ed362c42f4428a85240df8d604ac7735869029693eedb299bfb2427e6f91eca14ced944a8fab60"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "a77e8fefe7ad6e9cbd814e2649f5a6c9c2747784bdc5dacca89c87523e5a5886a3b9ce50415d3dc8577283392bb43756"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "625355aabd387d90dd476f4c085f775e809b714619b77595a503ba45208640205be52d64ce83de73d15f934645fa7b3f"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "97bfa2f0bac36697b9a26c2db12e79f6c8ad42a3add20e63c313243024fbce8f"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "8e87190b76c48fed8c3b993def6cc7bcc1a89d031d7571fc3a54ada6d8ba7850e1af9cef56f43ab36ebfdbeeeaf0c241550de07414c81449f6125062f105edd9"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.fusesource.jansi/jansi@2.4.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://fusesource.github.io/jansi"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/fusesource/jansi/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "http://groups.google.com/group/jansi"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/fusesource/jansi"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.tribuo/tribuo-util-onnx@4.3.2?type=jar",
+      "group" : "org.tribuo",
+      "name" : "tribuo-util-onnx",
+      "version" : "4.3.2",
+      "description" : "A Machine Learning library for Java.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "eeb3861dbd42183140758b07f505f682"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "5e33e445e5ca5a8e36ecca1f414e405c33987ee7"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "86093d6da1cb4e18b720ec345c076e6ef5d9a52ad1208536c84eb0e70f07c14f"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "dade1e5ffd0f19c5fa41c400061c38a3f4da249045b3aef244efb9ce5ac8e20d212754fc99efb213210f692a30d5125a95cad522a17f68ce981348feef74b415"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "345852b82ca16e2bc92acd2f5920026326a998cf8d8d3fb893b320bc1ca413c06201a0d7a8bcd7ecbc79d6b65d3983e7"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "b7187a021ebcd07eb6ff04feb063d77ed4fd5929ca400f9ab0ef2b3a09537314d63646936ff470db2dfdca863eb0b3ed"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "1e8eb75b009963bc242d397f76c550022f1b314c697e93f8fa847c4054469758"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "12aea205ab3beb8234bae7a5780bbf1cec67362e77f0cfd457f0206ae9beeac5b21f67fb92f3fcfb202dfb9f2a856833421bdf75030a587b873802ac7e7273bd"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.tribuo/tribuo-util-onnx@4.3.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://www.tribuo.org/tribuo-util/tribuo-util-onnx"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/oracle/tribuo/tree/main/tribuo-util/tribuo-util-onnx"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.oracle.labs.olcut/olcut-config-protobuf@5.3.1?type=jar",
+      "group" : "com.oracle.labs.olcut",
+      "name" : "olcut-config-protobuf",
+      "version" : "5.3.1",
+      "description" : "The Oracle Labs Configuration and Utility Toolkit.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "2abaf5df80afcea66f9da9da8084bbd2"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "95a7407e5ba0b4bb5e7e7fe4c593c510fe3c8bf6"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "14818cc3a94ae7521414d4845666ab821044278eec199b9c8f08b7118b745af5"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "cb6173b3434173b535f23423fd179a70451e4ffc5a5e995c47a1067e4b284e49fbd300dab62e5173c947b6a26c0cc2691e3252054d6a849e149ff51878e97015"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "27b4e8ba6a0e409e05a59a4643610cb0716f70833905e10c92654fe4aec08a327249d35fb7a5d5f9a8850da13afc0f7b"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "4307753c58a71aea6f19d1518a2b1bd72bbbad7d4126f6d882ac1d835c5b8254bcf6752bfcdf24a7f1bd957dc483e06a"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "04cecbf64c003de1015d58d86ee7965bd773269882a90543b0241479b136692a"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "bcbaf839cd74db3ad016fc98d0c4c42e7c22af6211cfb7586433364ab7714fe108f4a48cc613e5dc3ae0d97dd61c2b1724069abd715c3e56092c1db33874687e"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "BSD-2-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.oracle.labs.olcut/olcut-config-protobuf@5.3.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/oracle/olcut/olcut-config-protobuf"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/oracle/olcut/olcut-config-protobuf"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.google.protobuf/protobuf-java@3.25.6?type=jar",
+      "group" : "com.google.protobuf",
+      "name" : "protobuf-java",
+      "version" : "3.25.6",
+      "description" : "Core Protocol Buffers library. Protocol Buffers are a way of encoding structured data in an efficient yet extensible format.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "8deb2ece322807e85581a958310d16a4"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "ad9a225cd612320937d5138d425c7aacaf49f2ca"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "54943917af39f58303cab7d05f6cdf60d937c8304f49560b596bc1491ec83e8b"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "0f26dadfc2537759ef3b4660268cf7b391e3ae024ecb94ac928551ce6a945b68d10fc2ab22f10bce55ed0640f1244d7a8a0c904c40c43b3903cebb3674cc2a72"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "a8fe871144b403e4b367e5404a870e0555bcd92698f896e0fbee7ed5e0a5500e20817cc5a3fcdb3928c3f9488d9b1579"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "8518f6563f8b010ae1c442dae9ee0d2e8b5f83c06aaf8c5feb702672e9236cba84ea334b171922fa3f4099e3778089fe"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "89df01569e3bf51000b69c19a714c16531b1ead5705618bed9112f52136889e2"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "1634685782b0275c59a407c94cd7fa55eaff1bb93a1f2bc0fe2efa69fc34fba045f14c13a246287ecf4e83c136d3b323bd87166ba3b114ec5a76110f1f3ade7e"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "BSD-3-Clause",
+            "url" : "https://opensource.org/licenses/BSD-3-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.google.protobuf/protobuf-java@3.25.6?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://developers.google.com/protocol-buffers/protobuf-java/"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/protocolbuffers/protobuf/protobuf-java"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-data-tribuo@1.0.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-data-api@1.0.0?type=jar",
+        "pkg:maven/org.tribuo/tribuo-core@4.3.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-data-api@1.0.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.tribuo/tribuo-core@4.3.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.oracle.labs.olcut/olcut-core@5.3.1?type=jar",
+        "pkg:maven/org.tribuo/tribuo-util-onnx@4.3.2?type=jar",
+        "pkg:maven/com.oracle.labs.olcut/olcut-config-protobuf@5.3.1?type=jar",
+        "pkg:maven/com.google.protobuf/protobuf-java@3.25.6?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.oracle.labs.olcut/olcut-core@5.3.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.jline/jline-terminal@3.27.1?type=jar",
+        "pkg:maven/org.jline/jline-reader@3.27.1?type=jar",
+        "pkg:maven/org.jline/jline-builtins@3.27.1?type=jar",
+        "pkg:maven/org.jline/jline-terminal-jansi@3.27.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.jline/jline-terminal@3.27.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.jline/jline-native@3.27.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.jline/jline-native@3.27.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.jline/jline-reader@3.27.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.jline/jline-terminal@3.27.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.jline/jline-builtins@3.27.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.jline/jline-reader@3.27.1?type=jar",
+        "pkg:maven/org.jline/jline-style@3.27.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.jline/jline-style@3.27.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.jline/jline-terminal@3.27.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.jline/jline-terminal-jansi@3.27.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.fusesource.jansi/jansi@2.4.1?type=jar",
+        "pkg:maven/org.jline/jline-terminal@3.27.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.fusesource.jansi/jansi@2.4.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.tribuo/tribuo-util-onnx@4.3.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.google.protobuf/protobuf-java@3.25.6?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.google.protobuf/protobuf-java@3.25.6?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.oracle.labs.olcut/olcut-config-protobuf@5.3.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.oracle.labs.olcut/olcut-core@5.3.1?type=jar"
+      ]
+    }
+  ]
+}

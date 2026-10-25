@@ -1,0 +1,1263 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.5",
+  "serialNumber" : "urn:uuid:eb8bf06b-576a-31f5-916f-581d66f1b505",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-10-25T02:14:59Z",
+    "lifecycles" : [
+      {
+        "phase" : "build"
+      }
+    ],
+    "tools" : {
+      "components" : [
+        {
+          "type" : "library",
+          "author" : "OWASP Foundation",
+          "group" : "org.cyclonedx",
+          "name" : "cyclonedx-maven-plugin",
+          "version" : "2.9.1",
+          "description" : "CycloneDX Maven plugin",
+          "hashes" : [
+            {
+              "alg" : "MD5",
+              "content" : "9c7a565cf28cce58557d0c621c5ea4b1"
+            },
+            {
+              "alg" : "SHA-1",
+              "content" : "be882d5a22050bfa9d19090b1420c188617d0e1c"
+            },
+            {
+              "alg" : "SHA-256",
+              "content" : "698e0f37184a5b28c245c4065fd036dfce253b52f82fbb7113d81d36326cc249"
+            },
+            {
+              "alg" : "SHA-512",
+              "content" : "c0f0b11026858166f872a2eb54719492e5cecaa0bc9cd6b30b3ecb4a174eed220f4a1b5829d18d6734128e778d3cb3db7ffed177c92866133129cb29081814a0"
+            },
+            {
+              "alg" : "SHA-384",
+              "content" : "d80964707dfe5caca8c70521d5066f57589304c0a657e6fbc7c0614ea0fc7b3b3dbe7778361eee0f54ba111e9cb0ffcb"
+            },
+            {
+              "alg" : "SHA3-384",
+              "content" : "80bc3a275d9514bc457461ff52a72add8c7ecbbc01d8912efce57139016c544ee776981851be0a58fa977ab4221f703f"
+            },
+            {
+              "alg" : "SHA3-256",
+              "content" : "142317d6f245390f4fd2d0c100b16281b8dfc5c0c2cff86943bdcc97039cb699"
+            },
+            {
+              "alg" : "SHA3-512",
+              "content" : "af0fb9137c90b65d1a07f72e4d51ae509956cdb8800f35c961b037cdda1fe4a14ce3b496cef71ba85f1621affcfe29cd42704ae4191ff0b090a9602087c8997b"
+            }
+          ]
+        }
+      ]
+    },
+    "component" : {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-data-arrow@1.0.0?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-data-arrow",
+      "version" : "1.0.0",
+      "description" : "Arrow IPC adapter over the Data API (ADR-019): file/streaming format round-trip. The library never leaks into data-api signatures.",
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-data-arrow@1.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/data/cortexj-data-arrow"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/data/cortexj-data-arrow"
+        }
+      ]
+    },
+    "properties" : [
+      {
+        "name" : "maven.goal",
+        "value" : "makeBom"
+      },
+      {
+        "name" : "maven.scopes",
+        "value" : "compile,provided,runtime,system"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-data-api@1.0.0?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-data-api",
+      "version" : "1.0.0",
+      "description" : "Thin tabular contracts: Schema/Column/Frame/Dataset/Split/Fingerprint (ADR-019). Java 17, no IO dependencies.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "d8572a01ce6207f145cf2ecd227608e4"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "df1f0f686895c2c7fcc4d460c91d89f6ad44e593"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "60c5454ebff5b3213b6b5688f1b5f2ad8a3f18554acc86a1d0678255b264b972"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "30e27bde36c773a824325d44cfc71f2a7479ece884a41ba5b8d66c98a908bc8d2087b18454bf9fbf827b0e32f5979e9f2ee464c7f874ace76408dc9c55a10d44"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "9dc564af88797c7ae2d6f1c244b81d2388c80d20f778aa3fbeffc25e8289aea6a49fcd6ebafaf9606d2f37da02abe2b3"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "0e22d0cef698898769b3b353406a884b29bf420a63a9b436ef4685567db75c0f90bfca4fd00b107ffd70f9d684e727e6"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "f2cce9b5ccaccf03ea0101735bf67c3ffa916884cc9df426bd9b2da09319dfe7"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "28d225908eb8ba31f9722824357085e6d02a879037218a3f196c965e1c8ed2d3cc7376f691a54a054fa9982d76815524a5a77382701a6ece1300054e1f0fd75d"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-data-api@1.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/data/cortexj-data-api"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/data/cortexj-data-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.arrow/arrow-vector@19.0.0?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.arrow",
+      "name" : "arrow-vector",
+      "version" : "19.0.0",
+      "description" : "An off-heap reference implementation for Arrow columnar data format.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "e5f456c0d7911b81d28f3f4fab334527"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "cd60b56e316705f466380cf93b2b37d637e1a552"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "113e70317945e780050f13d17027d862d4c5d1cebe06c9fd8a5e922945bb2f8c"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "f153bc46920ba9730459e7b53d328cb0f0751d942c7a64b31ef89ecc43a07e24207e9b1a056539aecc8a23d46bcd87d3b41b9f5b153aa655f0e78667b45415be"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "a02c31ff929bb0233819486b30fe43fef71a68c0d9a1b5e09c6523214477b5dc65a57108611b5ac7a7c2a2281b37cc3b"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "00dd4c52823b4d2978fb92db68b3a0752539dedb2a39cc751c795eadd03d8ccb6d2760d3fc5057de8065eae444240d4a"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "be9105b8bb34808af87be493bfb476f4cfc5fb1ca21af2b3dad9048fa85e0bdc"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "645b2f0126dc0124ee654c1d79af7e605f2158a79893d43b42398d1298b48ae091cdf01e5532fb0f2946efb98dfe2e43d8651d7d70d8377c7bb6402351842a73"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.arrow/arrow-vector@19.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://arrow.apache.org/"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/apache/arrow-java/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://lists.apache.org/list.html?dev@arrow.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/apache/arrow-java/tree/v19.0.0"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.arrow/arrow-format@19.0.0?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.arrow",
+      "name" : "arrow-format",
+      "version" : "19.0.0",
+      "description" : "Generated Java files from the IPC Flatbuffer definitions.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "0b830e1dbfbb88a66d0752879ee6ba8c"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "7e0ac19498add7a9303b8e7f27f86d7bac4a1ec0"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "e805ea51ba8b517ec6c18a96ea83bef5cda5172a2b74419d4b48fb3584ce4504"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "6e6edee23a2b22a8cbcdbb93704b275896b96fee676b40e56510b61188ab2e6144cf285363c85f20bd48341d888ce7b756cc271fa09065c4764c54d964642ddd"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "96de989698c076a0614b87a84b61617ded55be9cb53986778fa62166f27357e7737abd00b5b9dff71c65b2b18322350c"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "db4e61f019029228bb4c2dc7c7bbae968006a4127ef2d569f901b1ffcf33443f33e571ae296f47f8648b3a1ecf9ee90e"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "d26d531d7cb099f6b1cf397853dba8231e76cf3ac8c8971b7db84e8436ff1b09"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "707ca81059bce823e241988dcdba40d3bcbe4d99b2ff1b46da0ba08618ac55e654a80d2c0f133ab57ed6bdf425f70d87ed091ce65adaa3a6789c0504a8c3f14f"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.arrow/arrow-format@19.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://arrow.apache.org/"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/apache/arrow-java/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://lists.apache.org/list.html?dev@arrow.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/apache/arrow-java/tree/v19.0.0"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.arrow/arrow-memory-core@19.0.0?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.arrow",
+      "name" : "arrow-memory-core",
+      "version" : "19.0.0",
+      "description" : "Core off-heap memory management libraries for Arrow ValueVectors.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "7fb3fc54ef3d99e11fb1938f584c79c6"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "eaa0a61d89eda28d4c9154af65f31ea0493f9658"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "0d3646cc2fa9ae94e95dc8b3e0ed5a51e1df15b59dc548f359e941023471884d"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "7ce3722cd9d07d3bf69f268dc8e167fc01eecbabcc998200b05b71cca2a28c801209d9f937bc32644568f283645b99ecd70973a75be353ce340f68e7f258aaef"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "7be5d828a13a2025fb7f6c60be7be9140b5fab213f058e35d98beab7723bd38e37943d98932a13f7750ee2e01a849235"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "9875b3aa77a9a217650698b896cd9ef562b1aea56b23af2c6e7026c6b43aecd60d742b96b71b561ed4c61b19de54b9f3"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "2c70b7073266ae77d09a9149129cda3058d41972c9ca102ed9b2a1a59ab1f173"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "1c213602a6545f685b92dbc821df3b3a10bf6825df2029bab7a17bf574e1af81b3ae7577389a26bb066a5805167f781b06ff1490b896f875fe61674cdcbf474f"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.arrow/arrow-memory-core@19.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://arrow.apache.org/"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/apache/arrow-java/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://lists.apache.org/list.html?dev@arrow.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/apache/arrow-java/tree/v19.0.0"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.0?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-core",
+      "version" : "2.21.0",
+      "description" : "Core Jackson processing abstractions (aka Streaming API), implementation for JSON",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "eeaf6f2d71789f1c04ba944aeaa8e18e"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1f7c3f82e6e2ef5def0a12d7dd754e26f0c0ae28"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "e22604bcd9b24e462d5df102007cb06e1ed811e86f1ce6081ca62f385f2db87b"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "4f00351e57ce480428216691c52c59a75ca824674d5c26ef902250cc3d012f22042c82eab9ca530c6328031b597239143e9e3b68c1c7a6cc6d49cef8cb420774"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "e34dea00b650d09efa43d8ae8bb2660528857248032285b5d92aa6cd510a5d8916261b302859e00434553dac4ceeb1c3"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "b44c51c7594ca0f2ff72fa0c05395bdf308bb7be64a75cc9df9d09db312b98ace47cd49a87dd638ec41b040974f408c6"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "e9d2a765039b8bdda3c3abaabd4f3bd49b5c48aadfe42d28928276da5dc3916a"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "41a8a4714d9f5a77541dba112960bd2b8719c9971a5e2bb2d8a219626df169e1cdf13344785d50b84887c316299397b39c2642f3669927baf50f930d67cae4fd"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson-core"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://central.sonatype.com/api/v1/publisher"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-core/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-core"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-databind",
+      "version" : "2.22.4",
+      "description" : "General data-binding functionality for Jackson: works on core streaming API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "e782b43929d9cb465924a105bdbf2db8"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1ff5a55d62432f57e8044394976e598af0c5b3b8"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "d4cbf8947087f305869826801913abdc50735a1fab2074a1993e7bc67ca974a3"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "688ee3a248895070623288bbbd1050e1c14f54d24ddac9be1e624e264eed8d88a6ca07ae90af6056bed1e5f1d0c9ac9db503cbcaaa45db7ba8ca213d3387dde6"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "82b6ee17013047935bf6da141a1084a625200883c04984c6d07b65ea41925b7eeee1674aeffcef37d1e724e6727951a6"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "39acae150a64e2fead35eecc17bd17f3fae8c003ff493899da4e540cd6af292e883b5d71102066efff91b83c256fcc27"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "a7729d3990f1a7ca650383073604455f172d267b0152465880ad5bc0efa6741f"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "8f01016a09ec87f9d182f006026d3c14d7098b3548aa34501db40a3b823c933ac278b7148c96606c8c441a746ea63f0f8ceb6fa7067546649816c678ab4a5962"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://central.sonatype.com/api/v1/publisher"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-databind/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-databind"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.21.0?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.datatype",
+      "name" : "jackson-datatype-jsr310",
+      "version" : "2.21.0",
+      "description" : "Add-on module to support JSR-310 (Java 8 Date & Time API) data types.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "87cbf6f62ac03289225809efd6fb6698"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "019aeeb3523112059e0ee7a859d337c0842f10af"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "b350169a3b2cc53d781541fe1bfbc0f00c978d185884da79b8330be8fb7aefeb"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "a3df0a08e799c3ca30e50ddb2fd2d76bdaa5921b079677b9a9fa5c4e8320362e8817d47dea1780fe78c3ad39f14af8e31b47425e56f7bc2488854934a6214a7b"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "7d886e5e840139386b5ead1e17a74e9028bfbf056c3fbb360499a35dc35425b7f9205e0fbb09664af3de0492db81a3cf"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "1e7a003849f33ff0bc27dd83a7ad43e08a5d63a830200d43a6dbe278240b706db43dbb4f64ce6c5c0cf90cd91fb9029f"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "cd407cfd4ef768daa0d753c7f07ca390eb12822e4c0305c0ef57d9eae255444f"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "73fb46551f9f13ef2378c529eb7332e13d3adde3da5b2898c1d279774fcdbbff771e4f093da5096cb194c3aa81003be9370bd6e375b6a1ee06565b6105395bb0"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.21.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson-modules-java8/jackson-datatype-jsr310"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://central.sonatype.com/api/v1/publisher"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-modules-java8/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "http://github.com/FasterXML/jackson-modules-java8/jackson-datatype-jsr310"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/commons-codec/commons-codec@1.21.0?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "commons-codec",
+      "name" : "commons-codec",
+      "version" : "1.21.0",
+      "description" : "The Apache Commons Codec component contains encoders and decoders for formats such as Base16, Base32, Base64, digest, and Hexadecimal. In addition to these widely used encoders and decoders, the codec package also maintains a collection of phonetic encoding utilities.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "c49977029838babaf8a71485aa9aaef8"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d95f998db5f89900fe895daf6cd2cddcb2f1d64b"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "4da851cb6abfb98bfe9eb77c5e5fc47f5414fa28b94e21b7fd9a646705dc167f"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "3ceb4aa588d0b918e46b1ddda9ff41b5a765985bf66542d2728458fc3f83b9dedfd972ff5d919cf6f456fbaa9f8c4e5f0c0913848ec3a471c316374e683b1f2a"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "05786582b0a85264688ad5b49ad6da09db1cdfe6301cf31ddea48f97f45b13ff25d9e3def1702890457fd5bbbd00f793"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "805bda170837bbedbecc5c63a5defc6a348777952906d8e6f33544866e86aa25c9d28f3b351e981d0fa49bb16e07884c"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "cbc2eafcba305c08e852133d0881d209799c4dc83d587869eed5f281d6bed4f3"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "244e6a342d4b5a6e7d077426427979f26320be305f1cb33d933672c926ea3a96fe4f284c9f592970f604928209fe0e149613b64990202d595bce01a669de418b"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/commons-codec/commons-codec@1.21.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://commons.apache.org/proper/commons-codec/"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/apache/commons-codec/actions"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://issues.apache.org/jira/browse/CODEC"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://mail-archives.apache.org/mod_mbox/commons-user/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/apache/commons-codec"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.google.flatbuffers/flatbuffers-java@25.2.10?type=jar",
+      "group" : "com.google.flatbuffers",
+      "name" : "flatbuffers-java",
+      "version" : "25.2.10",
+      "description" : "Memory Efficient Serialization Library",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "cadad6a81a9f7dc532ab7a5cb97a50c7"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "9bb1a149ec48588fc04a3d00a3cc4e0135273b4e"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "587bd6c31cda747587493a113bec8602d3a0b0ca579b2b1b838ef71b19e6525d"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "9c4b26d5554b7a6f9907f18033ec0fc060fd2af58d836d033e2b076319d782473f7f0a3ef4f9d16e859b2c5b15f73d83ac889323dbdcbd7563ea495c59b9c626"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "d560b2c573b607ab3c34f7ef13887814204fabb0e49e5f98f28c5f0f8fa7a86feeeca5f7a830237a7d8e735ca0df8d8a"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "f70604f012c9f91eeb264fd4245dd3b1ac3a6039ca8d46ccd6a24e7f4d0976d92eb14097ef92595eb49aa8d7124a84ec"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "c5af0cdd09bdc4197104b03820b944e0a24193bcc7ecafdd621b711cec27999b"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "52291e71a8d81ce74519f7e5d2d7c3e8bcdd699e137d02ab3d620e848f4732c33dccd5cd670875cc3b4efb12ff80b34b987b5a634aac6f816fb7c80c48678c4a"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.google.flatbuffers/flatbuffers-java@25.2.10?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/google/flatbuffers"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/google/flatbuffers"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.slf4j/slf4j-api@2.0.17?type=jar",
+      "publisher" : "QOS.ch",
+      "group" : "org.slf4j",
+      "name" : "slf4j-api",
+      "version" : "2.0.17",
+      "description" : "The slf4j API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "b6480d114a23683498ac3f746f959d2f"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d9e58ac9c7779ba3bf8142aff6c830617a7fe60f"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "7b751d952061954d5abfed7181c1f645d336091b679891591d63329c622eb832"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "9a3e79db6666a6096a3021bb2e1d918f30f589d8de51d6b600f8ebd92515a510ae2d8f87919cc2dfa8365d64f10194cac8dfa0fb950160eef0e9da06f6caaeb9"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "6ea24f814a9b6ece428cfd0535e2f3b8927005745ef61006b50fdb5a90126ee5ea05650155382b3b755c5bce38ef3944"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "9b1015052f0ec43f9be09764e131834157599611cb52f6fe591c4ac6a8ab4817518f2a4b8871e5e738c8678e93af5557"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "00559b4f4066b4917ba4fe2a6f23111eaeada321112d030910d218ced9084b5e"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "9579c2f7e7516e177c2d493ccc9eb8150978cf19f6f09b28d116f6935239fd56dc6af2b62b3336f79b0b462445550cd1fb5377a07001a6f44aaab6a32fa2fa47"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "MIT",
+            "url" : "https://opensource.org/license/mit/"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.slf4j/slf4j-api@2.0.17?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://www.slf4j.org"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qos-ch/slf4j/slf4j-parent/slf4j-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.arrow/arrow-memory-netty@19.0.0?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.arrow",
+      "name" : "arrow-memory-netty",
+      "version" : "19.0.0",
+      "description" : "Netty allocator and utils for allocating memory in Arrow",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "7f91686d5af8ac554eb7c5ffbd139bdd"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "6abc64b714648c03a2ade61215929d20a60d00de"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "e882e201a9a8de25f450e697491a3fb4689fb7cba9883c3323a966087fcf8c84"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "a12dbf6bbbfa44471dd65d6cc6d4e28f951ba2b2ed2cb2ce706eb368da0ab8c471acd03992d3ce6d51dd4c55519327bf299139efc6d7f11a8458059eae20f9b5"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "2f2eac874391c99083259fc8863a1629bf1abb5f7eb9d8419a60884216f56e95584c0c22029942053d47d391571f3cd3"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "82a95c4a44f1084403ba349671aaa0bc75ae687df16b7425ab104246b286359eecdc38465900d39308739771d6346fba"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "64a2e7d99f4e1965f0f15325cee49dc95d90b7c6342089561a77b614599958d6"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "d5631d1fb83ff652dc3599855007ba35ab2471a1a992e4e25939fa721392b0865fcdd51777c7e9ab6dec05defe2d3733d37aa01ca7516db2ca5e4468e04ff8f7"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.arrow/arrow-memory-netty@19.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://arrow.apache.org/"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/apache/arrow-java/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://lists.apache.org/list.html?dev@arrow.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/apache/arrow-java/tree/v19.0.0"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.arrow/arrow-memory-netty-buffer-patch@19.0.0?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.arrow",
+      "name" : "arrow-memory-netty-buffer-patch",
+      "version" : "19.0.0",
+      "description" : "Netty Buffer needed to patch that is consumed by Arrow Memory Netty",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "384ad474fc41d6c76426c7abf4b98135"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "111541208173c7341672b21e0e64bafe39f7f254"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "47a8d7d1c9df06b3b84a0e49815615dad86c8c91afddf5b9817ed3e777784557"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "243fcd4675e9002008df5e411724bc4e339fce47ac55b1346c6a06779f10f5b2c5f5273acea0571e38b9be3815c04fc1fe224ef2d56418322dc750a47fab7d86"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "531353d375512b560c2252037ef08201f372b79fc379489e3580568585202d1e3158e018e23c852525481b7578df6a62"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "8c751c100745d0efc7d20566fbe3cd1418e17894793d31170edb2162851e39daa291c2cf05037436e228cbe0a30b399b"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "7f983e4480b1693623de8f47f7fbdfbce8782a52caba247b6fdd9dc3c31e941b"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "15f5a66aebaca384822a1f47327e0d1032ba4a556f714dc2f18e6f73399d94430542cb959719d7dee99dee1fd03da69d51b0aaea35ba9fd3f8d09471bc3f80cc"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.arrow/arrow-memory-netty-buffer-patch@19.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://arrow.apache.org/"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/apache/arrow-java/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://lists.apache.org/list.html?dev@arrow.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/apache/arrow-java/tree/v19.0.0"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.netty/netty-buffer@4.1.139.Final?type=jar",
+      "publisher" : "The Netty Project",
+      "group" : "io.netty",
+      "name" : "netty-buffer",
+      "version" : "4.1.139.Final",
+      "description" : "Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers and clients.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "16f68bfe26f6ccc490698ee808adccaa"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "9bf302a4c01d89f42e633f55eb9ffd0bb6a0b92e"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "48d805b74e56dc5f92b1f288858185abc86db16d293e8da183542df6243427f2"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "9c1ab4ba621a9e1b3815ab308453ad3e5a7504189c2a4a85edf50c4902d819b946171d2ff05a1c97f8fceec22cf9893206d0273398e2e9f5f2e7b83e7fd6ad8f"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "a2671f8c9a951a3e867e8a23a5ee4438a46946f7c9e864eba8ca30af34c3358d3f47f9d5f4ee3ecfe354ae98bba5b8c7"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "c0c3ad7d0d42b147000c0e487a1fe4ff5319296fcac2171db0711d803c2d7a0f2decfbc81cc349f1b0154a0b5e2dcfec"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "4176b6f92d49a2cf62fe9d5f52923e8528a1bcf947f4ee02c3e1b07c643db633"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "5a4362c7259afd03d8bea205cbadeeefb6e46e265201b2f0ca84124168bc66bc28b665240190ba15bba87a9012efe1e89182f5e988fbfb60fd1d3e3d0af21732"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.netty/netty-buffer@4.1.139.Final?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://netty.io/netty-buffer/"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/netty/netty/netty-buffer"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.netty/netty-common@4.1.139.Final?type=jar",
+      "publisher" : "The Netty Project",
+      "group" : "io.netty",
+      "name" : "netty-common",
+      "version" : "4.1.139.Final",
+      "description" : "Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers and clients.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "e15adda8e2610cc205d0abd6603118f5"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "c3d17ade6f80714ca28078706cbb33c9e8096cf8"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "50372d86e27b4b1cf0810d75eb534795966a199049a1e85a0c41bbd2bb97f519"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "ffaff98e6c977a40081c902c87ec4b27b986d497eb0b2f1ef1c466831c1c4d1cd72b902bd6a89497f84d1eed716c96ce90abda6f982103960434e6f25140c5f7"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "e8b2d4483b27bc7ec12ffa843649a3162dd9b7692498ff31b30146e159ba779441c0f073b9aaa7efb351bba2dd69459b"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "508b1556256e68350dc08677035239f66a64e3caf9530e48a3bbc664405f01f6f6754d5736a979821a5f0ea72b08efbe"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "425fa3b8abc7908530c1bd8c9c2cb3307211284272443b3e591cbdb342dbab09"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "12660770567251c5e7d1a19f1006d87de3e80dd0456a95a597e5d5c29d09a9b23746a85e8c710cba52fa5ca47ded6e677f7983422fc28a3cb7527e6fbd5ff84a"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.netty/netty-common@4.1.139.Final?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://netty.io/netty-common/"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/netty/netty/netty-common"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-annotations",
+      "version" : "2.22",
+      "description" : "Core annotations used for value types, used by Jackson data binding package.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "04c11c456fd1e21b9a21c25c665109cc"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "15c67f9498d6934cff9510fc70c5a12e52290457"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "21ddb598807d3a51a876704eb979d9296e1c6a6f47ab1826ff88c6d6a127a2d0"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "63b597ec02b4e31c57266d9b96f05f301f217bc12ffb7ba046a5658d2829728930a559947b98eb6c3cc448413a96b4939427aa669ae1e2dc3597ab5d5d287f9f"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "35b6fe651afeed54d1e6f7a39ac6cf6fdbafacdf2e3bdff7b29b965ccb79a0c53342a56bf0ecea4d6c4c4651b1d6aa19"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "72267dc54c4175c42ca0dd430a87b12cc68619a8777be2048e1d2f0747db884a568b5c346c77c9c8c0714ab96018f5f7"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "6bfc7b4ba70779fe5f0b1e2af585abab982f7929a68beb2c0e62ea2e2a321de0"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "3f1bdfa32f7df76ac14cd2a3e689b65066fa0a6a760a9b8b1121773bb1b043a44587d4148c67f361dc6c630e6b31f29b2691a57d47caabea5ca23ae44af34a5e"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://central.sonatype.com/api/v1/publisher"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-annotations/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-annotations"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-data-arrow@1.0.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-data-api@1.0.0?type=jar",
+        "pkg:maven/org.apache.arrow/arrow-vector@19.0.0?type=jar",
+        "pkg:maven/org.apache.arrow/arrow-memory-netty@19.0.0?type=jar",
+        "pkg:maven/io.netty/netty-buffer@4.1.139.Final?type=jar",
+        "pkg:maven/io.netty/netty-common@4.1.139.Final?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-data-api@1.0.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.arrow/arrow-vector@19.0.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.apache.arrow/arrow-format@19.0.0?type=jar",
+        "pkg:maven/org.apache.arrow/arrow-memory-core@19.0.0?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.0?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.21.0?type=jar",
+        "pkg:maven/commons-codec/commons-codec@1.21.0?type=jar",
+        "pkg:maven/com.google.flatbuffers/flatbuffers-java@25.2.10?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.17?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.arrow/arrow-format@19.0.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.google.flatbuffers/flatbuffers-java@25.2.10?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.google.flatbuffers/flatbuffers-java@25.2.10?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.arrow/arrow-memory-core@19.0.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.slf4j/slf4j-api@2.0.17?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.slf4j/slf4j-api@2.0.17?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.21.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.0?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/commons-codec/commons-codec@1.21.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.arrow/arrow-memory-netty@19.0.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.apache.arrow/arrow-memory-core@19.0.0?type=jar",
+        "pkg:maven/org.apache.arrow/arrow-memory-netty-buffer-patch@19.0.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.arrow/arrow-memory-netty-buffer-patch@19.0.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.apache.arrow/arrow-memory-core@19.0.0?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.17?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.netty/netty-buffer@4.1.139.Final?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.netty/netty-common@4.1.139.Final?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.netty/netty-common@4.1.139.Final?type=jar",
+      "dependsOn" : [ ]
+    }
+  ]
+}
