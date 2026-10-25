@@ -1,0 +1,1092 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.5",
+  "serialNumber" : "urn:uuid:3a5ec987-2fb8-3126-97ca-b57a5d4e2809",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-10-25T02:34:55Z",
+    "lifecycles" : [
+      {
+        "phase" : "build"
+      }
+    ],
+    "tools" : {
+      "components" : [
+        {
+          "type" : "library",
+          "author" : "OWASP Foundation",
+          "group" : "org.cyclonedx",
+          "name" : "cyclonedx-maven-plugin",
+          "version" : "2.9.1",
+          "description" : "CycloneDX Maven plugin",
+          "hashes" : [
+            {
+              "alg" : "MD5",
+              "content" : "9c7a565cf28cce58557d0c621c5ea4b1"
+            },
+            {
+              "alg" : "SHA-1",
+              "content" : "be882d5a22050bfa9d19090b1420c188617d0e1c"
+            },
+            {
+              "alg" : "SHA-256",
+              "content" : "698e0f37184a5b28c245c4065fd036dfce253b52f82fbb7113d81d36326cc249"
+            },
+            {
+              "alg" : "SHA-512",
+              "content" : "c0f0b11026858166f872a2eb54719492e5cecaa0bc9cd6b30b3ecb4a174eed220f4a1b5829d18d6734128e778d3cb3db7ffed177c92866133129cb29081814a0"
+            },
+            {
+              "alg" : "SHA-384",
+              "content" : "d80964707dfe5caca8c70521d5066f57589304c0a657e6fbc7c0614ea0fc7b3b3dbe7778361eee0f54ba111e9cb0ffcb"
+            },
+            {
+              "alg" : "SHA3-384",
+              "content" : "80bc3a275d9514bc457461ff52a72add8c7ecbbc01d8912efce57139016c544ee776981851be0a58fa977ab4221f703f"
+            },
+            {
+              "alg" : "SHA3-256",
+              "content" : "142317d6f245390f4fd2d0c100b16281b8dfc5c0c2cff86943bdcc97039cb699"
+            },
+            {
+              "alg" : "SHA3-512",
+              "content" : "af0fb9137c90b65d1a07f72e4d51ae509956cdb8800f35c961b037cdda1fe4a14ce3b496cef71ba85f1621affcfe29cd42704ae4191ff0b090a9602087c8997b"
+            }
+          ]
+        }
+      ]
+    },
+    "component" : {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-tck@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-tck",
+      "version" : "1.0.1",
+      "description" : "CortexJ - AI runtime orchestration and model portability platform for the JVM",
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-tck@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-tck"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-tck"
+        }
+      ]
+    },
+    "properties" : [
+      {
+        "name" : "maven.goal",
+        "value" : "makeBom"
+      },
+      {
+        "name" : "maven.scopes",
+        "value" : "compile,provided,runtime,system"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-api",
+      "version" : "1.0.1",
+      "description" : "Shared public API, Java 8 baseline. No framework or runtime engine dependencies (AP-001, AP-002).",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "1b95bc61f261246a52d3b9ad79f3b6b4"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d443b3bfa03a169610e38818090797dc7f5ef251"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "809f1e14ef29314fa41f8257a145d2c130faebff90c4b0ab76509528f60bccbb"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "df4ab066c01226c5130afd19db8317754f7a92b6341c370567556d66d1e3fcc7c795a786ada2ea3310321e16ac2154f56070c913a4de0f49817c3b1c15a6dc64"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "0efd230894adb361d366bf62f429d59701f3d7ea1e143219123c7726fad50b741ef20c4d76d2d84ea2913510eeebd877"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "7486d30e63aabe60dc7f06702889099c0a735bb15f4a9f5bb1cd577c0bd9b0fa3904c59daac873c824d429ec24a5cea4"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "f4a45c10d2d11f7a48337a8d02debe38602e267fd90880a4a7812ce73450a5ed"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "dfa41ddc661dfddff9756661f530c946f0340bc46485190f068a508203c30308c04bbe4d0e1aed26febe585269db86f3f21497c072e138ba4da4bf95982a675a"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-api"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-spi@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-spi",
+      "version" : "1.0.1",
+      "description" : "CortexJ - AI runtime orchestration and model portability platform for the JVM",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "05e9ed644bab2866c306da0af09e0eaa"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "2c5526746ecbd0300ea94c4c1ccae02a52378e03"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "5d3eaf8fd2347bc373beaf0c89bd959c941da6150eb07de1f60f3c0b26169a44"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "cb8128f44f3ade79f3ac61625a527f3f7478834822ba443430760526600d128894baa94cc830da595c33e76fd229f7e6d1c617b6a6893d848aa636565d36e301"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "f1ea23efdd6243fdd9593eb3df19cc486117fe0182db4d07e6c9c5dd3a810fd70e2a0d825145cd8715a09d8b498f2242"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "eabd95348bc33754bcf12a58fceecf8d117243c762d8e8a8ae649b2a83279329e410efc4841e16ef71d2ffbc52568f0e"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "255e68601e35962744d9bee37ede6182f30940578e3edbad583f5d99a6437dde"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "95b1bc902d8c21d84bcb3b531804057e6f828a4a7dfa2eb74e88af9ce07a262b453d3a1f0b7cf968ca0745f0770c558fa7646b20322e031b4e4fa1e3bb80b5c9"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-spi@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-spi"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-spi"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-model@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-model",
+      "version" : "1.0.1",
+      "description" : "CortexJ - AI runtime orchestration and model portability platform for the JVM",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "80e7fb0ceda87cd7c9887c1dc6dd0f7a"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "c647e66639d9a8598a3c32f593c142aea4395996"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "83d28fed8bcb2c20054220cc698748f2a2c47bf83347dcbdca9b53fc3af99143"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "c781aa035807b7b3ab17bc42e55ea6070fffc8470813f43f335ee57329ced0fa79a5c5b754d6109bf5d67bb2f29027432892495110e47cbcc65bbcccee371d98"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "618b1e1cc69f827aa5661ab2448fc4faec0b13ff9586a79fbd82011a8cbe48496129e4b3a5d04fa7fe64b9e7c23bb58f"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "883e8aaf90db59115a6f676b134efe57e3c2b5b7304f5e21cc1c8c0cee6de6175fd8631800b4cc5cabddf2c2bacad8b2"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "0ba19c4d0795f21aeac1d9081d7b8ec5d85ae2ae71e16667e4430259c458a00a"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "c20f73e31a55b94148a629a01e031b41b80fa2e284169cf53fae823fd4f329420ee1870243ef62f4302163e2b88b8cdc4bf016d27226ebc681eef42870788c56"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-model@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-model"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-model"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-databind",
+      "version" : "2.22.4",
+      "description" : "General data-binding functionality for Jackson: works on core streaming API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "e782b43929d9cb465924a105bdbf2db8"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1ff5a55d62432f57e8044394976e598af0c5b3b8"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "d4cbf8947087f305869826801913abdc50735a1fab2074a1993e7bc67ca974a3"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "688ee3a248895070623288bbbd1050e1c14f54d24ddac9be1e624e264eed8d88a6ca07ae90af6056bed1e5f1d0c9ac9db503cbcaaa45db7ba8ca213d3387dde6"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "82b6ee17013047935bf6da141a1084a625200883c04984c6d07b65ea41925b7eeee1674aeffcef37d1e724e6727951a6"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "39acae150a64e2fead35eecc17bd17f3fae8c003ff493899da4e540cd6af292e883b5d71102066efff91b83c256fcc27"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "a7729d3990f1a7ca650383073604455f172d267b0152465880ad5bc0efa6741f"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "8f01016a09ec87f9d182f006026d3c14d7098b3548aa34501db40a3b823c933ac278b7148c96606c8c441a746ea63f0f8ceb6fa7067546649816c678ab4a5962"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://central.sonatype.com/api/v1/publisher"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-databind/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-databind"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-annotations",
+      "version" : "2.22",
+      "description" : "Core annotations used for value types, used by Jackson data binding package.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "04c11c456fd1e21b9a21c25c665109cc"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "15c67f9498d6934cff9510fc70c5a12e52290457"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "21ddb598807d3a51a876704eb979d9296e1c6a6f47ab1826ff88c6d6a127a2d0"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "63b597ec02b4e31c57266d9b96f05f301f217bc12ffb7ba046a5658d2829728930a559947b98eb6c3cc448413a96b4939427aa669ae1e2dc3597ab5d5d287f9f"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "35b6fe651afeed54d1e6f7a39ac6cf6fdbafacdf2e3bdff7b29b965ccb79a0c53342a56bf0ecea4d6c4c4651b1d6aa19"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "72267dc54c4175c42ca0dd430a87b12cc68619a8777be2048e1d2f0747db884a568b5c346c77c9c8c0714ab96018f5f7"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "6bfc7b4ba70779fe5f0b1e2af585abab982f7929a68beb2c0e62ea2e2a321de0"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "3f1bdfa32f7df76ac14cd2a3e689b65066fa0a6a760a9b8b1121773bb1b043a44587d4148c67f361dc6c630e6b31f29b2691a57d47caabea5ca23ae44af34a5e"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://central.sonatype.com/api/v1/publisher"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-annotations/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-annotations"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-core",
+      "version" : "2.22.4",
+      "description" : "Core Jackson processing abstractions (aka Streaming API), implementation for JSON",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "fa9ba32880026c653cc151bed0c28498"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d753ae59bae7dcb183f856da541c5b27272088ce"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "2d30c375cddea9657a1e1ef97547a2694b663b355facb4de53a097782b312d1a"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "3b0d500043699ce40fc6befc04c9dbf3e8067de453098fba53d1891793bd3da80955e44536d113fac6fc8fb58264e47b265ab3466b3c6fd4bca111487ac24700"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "8b3beecfc5464c704601fe9cfe90ccabb7090381676da9d7514b27c979c4580baa1a343c9724146fc86c0568cad6d53c"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "30e3394466b713fa98b37e6d98948d38b26e2be090f35902f3416fa93c69c78d7d5e69d035a8403d720bb7106f29e716"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "edc5681da0d239439298ed33621f4aa1991aeca9a29be0c1d6ba76036dd8dfdc"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "9e9e02839c0cbe5c5aafb5af23d25db2bc71754a10c18998aee1fe7d216fdf7dd6602859480d5e76991f9393587ac215633f9a1740329715db40904532aaf483"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson-core"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://central.sonatype.com/api/v1/publisher"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-core/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-core"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.junit.jupiter/junit-jupiter@5.14.4?type=jar",
+      "group" : "org.junit.jupiter",
+      "name" : "junit-jupiter",
+      "version" : "5.14.4",
+      "description" : "Module \"junit-jupiter\" of JUnit 5.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "b93ec7756926e147287d5ad284703945"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "f2329cd22891643462575fdfe14b00daa841426c"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "a573c9a99af73e1889d1d3ed7e12067c85cff6a821b96a1916e5ccccc375ae58"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "1132de399f97b844654001c1b28fcc56e39dc597c38f45990695651be68485a050e344ca6304fbb72fca82c84e83eda3a587d74c52e469dbbc51cc39207f6a7f"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "f6d1e65676cd0a358738d52aeb2f91f15c986377629936a30cef40908a34af2e5b021e59cce979be44580d4544c3fab0"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "8e002519fbc8b7ca065149d27eb606a7c99afc432fff56a115411daee103211d324741d2afcfe0f90c9a3926db5bd5a4"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "b1ed03dbae1382c4065172c7d5c3c5a34d1fcdc9c030038d31811ab76f370a59"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "a785699f42b96a3f636d6c740dc9d7ec12820863ced3f0f805f97ad8d839171f92d5dcbfb5fa005da2938d5e21e0dc846170886a571d6aa32fe6b7a901a8bf30"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.junit.jupiter/junit-jupiter@5.14.4?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://junit.org/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit-framework"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.14.4?type=jar",
+      "group" : "org.junit.jupiter",
+      "name" : "junit-jupiter-api",
+      "version" : "5.14.4",
+      "description" : "Module \"junit-jupiter-api\" of JUnit 5.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "f983e190baf37d6940d42f98d143f4d5"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "478c1ec9780d6214c04db63caa520a18a7a0c697"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "aa1ae085fd92dfdbf85d867e60e59adc599bac183b46fc7e0698198bf426ad3f"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "3b1c118b3dc1dd86a0cb1a4987d3b80ff81bec3c0edffad9d395143bc9ed551080a6cf658c77b5070733bcd49cd91b92390c085a8aefcbf8d3522ae5ffa185b9"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "0e235d8dff7ac40202c1f814978d89bf45f52fb7d83ee348191012a949fba201c42eff251edd87ecfb9a1ba39ba76760"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "1b0761b0e1537eb67b9a13c922d9636fffd0fbb484d35733a5e562451900714a3cde28cf81199f1a9f3e89e7a1325233"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "7fc5009f18d96767ddc6ee0ba73cdb9c583ff91a4bddf02d0b27442dd5aa52d5"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "b09c7707ecd1e7b663e16d2470ca272ddb12db586b45170a2b7737dfd5df1bc7d0f80cb64cb8e004b0f0573ab22f99357273133cd270feea2d2b486e075565e8"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.14.4?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://junit.org/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit-framework"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar",
+      "group" : "org.opentest4j",
+      "name" : "opentest4j",
+      "version" : "1.3.0",
+      "description" : "Open Test Alliance for the JVM",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "03c404f727531f3fd3b4c73997899327"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "48e2df636cab6563ced64dcdff8abb2355627cb236ef0bf37598682ddf742f1b"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "78fc698a7871bb50305e3657893c10500595f043348d875f57bc39ca4a6a51eda3967b7c8c8a7ec3e8f85f2171bca4aa98823e912e416e87e81c6ba5b70a37c3"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "10398b6998c9202a0731e2e19ae1c3f9d8a83582c2663fe7bdda15794ee6fa816727dbd8f7c7164bd5395ee1cfe7c97e"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "3abe706fd78509c25a402c7bbf6f9ddf71ffb5b35054864ba0fdf7902207115f888a0ba728fd71d2e87a9360d2498121"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "d961907a1bfa1dcda329dca494ffbc251b31fabcaca5ab7095661a8ce3c1d654"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "0ad661617bcac51bcd26f7ad4611c69b1fd9811b50dbf734e041a3243ab1f845e7796620e8a7c40c4a2df3946864598b1251396c7d9bd813203d82710788cce0"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/ota4j-team/opentest4j"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/ota4j-team/opentest4j"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.junit.platform/junit-platform-commons@1.14.4?type=jar",
+      "group" : "org.junit.platform",
+      "name" : "junit-platform-commons",
+      "version" : "1.14.4",
+      "description" : "Module \"junit-platform-commons\" of JUnit 5.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "2e8ac3dadfa02b7eacb87e48596ce514"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "8fc5afb31243ac7141e48e5aa571955340c83795"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "55c8a0c069ac1bc4e1f8bbb26b5eae95cbd10e4ff1b23248441ab61a607381e1"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "2cd0aad67137deecdbeddb2ca48ad4f26be29392f52cdf9c685c04a90ea438859769838e3767e9887916dcf90c50e3c30a4006dd7941b269e3fc856136155e54"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "b35387c2e496a4b24315c8f662f37fba115a7901e8e39543570ccb215ee64d3f7b6cdaeccd94c59269e0b938b4c8d754"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "45cccb65805def7e73d6329e7f870332fb19abe78f233812a99ab67806933fdee864a15921f55b71b59d81f7a2da9043"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "cb2fccd108a43492d5145ff9606ca302ed29959d990916807d2b2ad6b853c485"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "680128c98dc065e550444f4d3fcf1634dd7bca4443c2750d7f76281f17fdcfbcaba318adad97548b0db9b59c2918fdf3d6947cfb4ec0b63cdbe810c87b875f2b"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.junit.platform/junit-platform-commons@1.14.4?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://junit.org/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit-framework"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+      "group" : "org.apiguardian",
+      "name" : "apiguardian-api",
+      "version" : "1.1.2",
+      "description" : "@API Guardian",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "8c7de3f82037fa4a2e8be2a2f13092af"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "a231e0d844d2721b0fa1b238006d15c6ded6842a"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "b509448ac506d607319f182537f0b35d71007582ec741832a1f111e5b5b70b38"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "d7ccd0e7019f1a997de39d66dc0ad4efe150428fdd7f4c743c93884f1602a3e90135ad34baea96d5b6d925ad6c0c8487c8e78304f0a089a12383d4a62e2c9a61"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "5ae11cfedcee7da43a506a67946ddc8a7a2622284a924ba78f74541e9a22db6868a15f5d84edb91a541e38afded734ea"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "c146116b3dfd969200b2ce52d96b92dd02d6f5a45a86e7e85edf35600ddbc2f3c6e8a1ad7e2db4dcd2c398c09fad0927"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "b4b436d7f615fc0b820204e69f83c517d1c1ccc5f6b99e459209ede4482268de"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "7b95b7ac68a6891b8901b5507acd2c24a0c1e20effa63cd513764f513eab4eb55f8de5178edbe0a400c11f3a18d3f56243569d6d663100f06dd98288504c09c5"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/apiguardian-team/apiguardian"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/apiguardian-team/apiguardian"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.14.4?type=jar",
+      "group" : "org.junit.jupiter",
+      "name" : "junit-jupiter-params",
+      "version" : "5.14.4",
+      "description" : "Module \"junit-jupiter-params\" of JUnit 5.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "053d2b0d7d794f1366f8a7266c430bd3"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "a9f917d2417ae260fe3451ec7640bbbd8774840f"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "28f2a8dab5b9d259b18fa6b0ba5a6f302cbc70dd875f42032ea9e3afea09a870"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "4e77131400b642aa166d3966c7176a7ae0679924db6d026352264e685388824266c6b046c8cd5425856531056633371223d97f739cb479dae442e757a4f0ae0f"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "b13d9d191e7e47dda347116afcd001d78a5b21ce2723436b80e0d59d2e7a797f43304ce485373ef929d4d018891422b0"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "7a9be5d88e7ca3657f83d8ef7fa909882b7c1604069ef02ac93bc312321f96df56670cee59ad388782f2e375f23376a0"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "d633fe1c738ce8149cf1a0c4929d214bdd3727ecce263fd252349f95075e116a"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "e592f1953bbfe8fc0c235a64532725becfce942d5fb016ca9852b5644110c34f8d02f5e5dc9d75b4ccb03d6102f73ef8c7cea8ad85b1d83b816e6f8abdd0c30a"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.14.4?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://junit.org/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit-framework"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.14.4?type=jar",
+      "group" : "org.junit.jupiter",
+      "name" : "junit-jupiter-engine",
+      "version" : "5.14.4",
+      "description" : "Module \"junit-jupiter-engine\" of JUnit 5.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "63a15656a695514c964fdfcaae620bd6"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "dd198558041b67d6a86f801908020ee21cdadf3e"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "e1e35cf651ae1635638d431ea4412d5c65938be54150444f07ba659586042b11"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "d9e568ee378517762f61deda9a3368f337b7e0644024358220dc746a29005d7797a19743d2d625e9b239b86d9a43977b98b0cbcf2b22ab38f348a1984e07cff0"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "6a77f68663b059f36102fc9d4785de67db908e8dd0cb1ad3ae5e936847a26d573cf8871ebd406b07dd0051ec2840c77f"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "bc4d59be33c320f16e4faa37cd15450a066b3d52090a9cc6930f6f3be6a1b5939601135ccda215ecf820279e557235b1"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "bdf103545ae0d61afb46171e072a9c6028108553c039889680d6539c6466dcb6"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "89078c3568e6008ffa08f0ecded18c871421e8d205cf2d01cd9b642b902720abd651bc25377a68d1ada18a237042d10633bef4918993054982869348e5462b05"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.14.4?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://junit.org/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit-framework"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.junit.platform/junit-platform-engine@1.14.4?type=jar",
+      "group" : "org.junit.platform",
+      "name" : "junit-platform-engine",
+      "version" : "1.14.4",
+      "description" : "Module \"junit-platform-engine\" of JUnit 5.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "1dd22170b0597fdab9b568271b2e5483"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "efa8516a9ba0d1efa7f9f64d7a046f05c6b39cfd"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "3c7f3f84a6747aef0db6bd5fdd2a6c8fe37132e653c939bd67387377af66d91c"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "1650979450a23cd780f3e6b3d2378011b32d35079612ad22cc0a20753aada0ab20fc554a06e59fbd6d15ebe9ab030d86855dd42175ee1cf8f5bb0b26a14418e5"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "970aa7c3ff90b4cb6e2621f59f7023d044a1e1b6ba3de6bf581e61ff05dad20a7af4bb0b236571af9427cc6a0f1ec5d7"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "bb5a195e0a1bb2fd9d343ec7afd501118e7e87f2afedc22fd41f108ee05a0eb7554acea0c3bc0762e072edca81d67f00"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "050b25ac6f29000290efdc2aaf19256b3f8831c10750f55bdc8b21136812f126"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "2503f6761af57bfc4292944db28b1100c2692847e4981f3c2178e80f3b5e2cafed2d07b8ea6c3d6bb0e7954fd2e509215f422187c23646ef53d67b583dfdc7a2"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.junit.platform/junit-platform-engine@1.14.4?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://junit.org/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit-framework"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-tck@1.0.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar",
+        "pkg:maven/io.cortexj/cortexj-spi@1.0.1?type=jar",
+        "pkg:maven/io.cortexj/cortexj-model@1.0.1?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter@5.14.4?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-spi@1.0.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-model@1.0.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar",
+        "pkg:maven/io.cortexj/cortexj-spi@1.0.1?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.junit.jupiter/junit-jupiter@5.14.4?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.14.4?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.14.4?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.14.4?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.14.4?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.14.4?type=jar",
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.junit.platform/junit-platform-commons@1.14.4?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.14.4?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.14.4?type=jar",
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.14.4?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.junit.platform/junit-platform-engine@1.14.4?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.14.4?type=jar",
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.junit.platform/junit-platform-engine@1.14.4?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.14.4?type=jar",
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,367 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.5",
+  "serialNumber" : "urn:uuid:965741f6-5510-331a-9e4a-d6aaa3bb8f8c",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-10-25T02:34:55Z",
+    "lifecycles" : [
+      {
+        "phase" : "build"
+      }
+    ],
+    "tools" : {
+      "components" : [
+        {
+          "type" : "library",
+          "author" : "OWASP Foundation",
+          "group" : "org.cyclonedx",
+          "name" : "cyclonedx-maven-plugin",
+          "version" : "2.9.1",
+          "description" : "CycloneDX Maven plugin",
+          "hashes" : [
+            {
+              "alg" : "MD5",
+              "content" : "9c7a565cf28cce58557d0c621c5ea4b1"
+            },
+            {
+              "alg" : "SHA-1",
+              "content" : "be882d5a22050bfa9d19090b1420c188617d0e1c"
+            },
+            {
+              "alg" : "SHA-256",
+              "content" : "698e0f37184a5b28c245c4065fd036dfce253b52f82fbb7113d81d36326cc249"
+            },
+            {
+              "alg" : "SHA-512",
+              "content" : "c0f0b11026858166f872a2eb54719492e5cecaa0bc9cd6b30b3ecb4a174eed220f4a1b5829d18d6734128e778d3cb3db7ffed177c92866133129cb29081814a0"
+            },
+            {
+              "alg" : "SHA-384",
+              "content" : "d80964707dfe5caca8c70521d5066f57589304c0a657e6fbc7c0614ea0fc7b3b3dbe7778361eee0f54ba111e9cb0ffcb"
+            },
+            {
+              "alg" : "SHA3-384",
+              "content" : "80bc3a275d9514bc457461ff52a72add8c7ecbbc01d8912efce57139016c544ee776981851be0a58fa977ab4221f703f"
+            },
+            {
+              "alg" : "SHA3-256",
+              "content" : "142317d6f245390f4fd2d0c100b16281b8dfc5c0c2cff86943bdcc97039cb699"
+            },
+            {
+              "alg" : "SHA3-512",
+              "content" : "af0fb9137c90b65d1a07f72e4d51ae509956cdb8800f35c961b037cdda1fe4a14ce3b496cef71ba85f1621affcfe29cd42704ae4191ff0b090a9602087c8997b"
+            }
+          ]
+        }
+      ]
+    },
+    "component" : {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-observability@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-observability",
+      "version" : "1.0.1",
+      "description" : "CortexJ - AI runtime orchestration and model portability platform for the JVM",
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-observability@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-observability"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-observability"
+        }
+      ]
+    },
+    "properties" : [
+      {
+        "name" : "maven.goal",
+        "value" : "makeBom"
+      },
+      {
+        "name" : "maven.scopes",
+        "value" : "compile,provided,runtime,system"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-api",
+      "version" : "1.0.1",
+      "description" : "Shared public API, Java 8 baseline. No framework or runtime engine dependencies (AP-001, AP-002).",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "1b95bc61f261246a52d3b9ad79f3b6b4"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d443b3bfa03a169610e38818090797dc7f5ef251"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "809f1e14ef29314fa41f8257a145d2c130faebff90c4b0ab76509528f60bccbb"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "df4ab066c01226c5130afd19db8317754f7a92b6341c370567556d66d1e3fcc7c795a786ada2ea3310321e16ac2154f56070c913a4de0f49817c3b1c15a6dc64"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "0efd230894adb361d366bf62f429d59701f3d7ea1e143219123c7726fad50b741ef20c4d76d2d84ea2913510eeebd877"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "7486d30e63aabe60dc7f06702889099c0a735bb15f4a9f5bb1cd577c0bd9b0fa3904c59daac873c824d429ec24a5cea4"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "f4a45c10d2d11f7a48337a8d02debe38602e267fd90880a4a7812ce73450a5ed"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "dfa41ddc661dfddff9756661f530c946f0340bc46485190f068a508203c30308c04bbe4d0e1aed26febe585269db86f3f21497c072e138ba4da4bf95982a675a"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-api"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-api@1.67.0?type=jar",
+      "group" : "io.opentelemetry",
+      "name" : "opentelemetry-api",
+      "version" : "1.67.0",
+      "description" : "OpenTelemetry API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "d6f000325d6d96972a81a882dee61a05"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "069f15f38424287af33eda1ed782b440029710a0"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "538d1dff2f9a37aecbc0ef98fd17273a3affb058e734e6763a3a07a38a5fdc59"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "c80458ba4567002027f44fcb8c11c01942191a1d59a27c360acc552f586fc563e9e31732b5f3cf05c7e6da20b4965de0bf836989d781881b02053e97e62206af"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "828a339de3eae5332f9bff2d4169848b4b0f55e57758d5073e4a00a1e175654ecae6c24214a1448614be73ee78ae8fc0"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "a0d7e660549657ddd15d31c8334f31f16dd3a4c0aafc481d06ea5330478b5ac48d8fb0b35338cc57decc5e5abeda5982"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "45e318745fe6c7f874de2162eee3a0ddd5e5d52eef2b15612f625b9cc175c38a"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "8555d05a3dba846cbb83953abc3e543c3931536fd6adad523acf4e35b17cc4f2dac5b569819135e6e522ab0f67ed0603b1d0d9f7814c6f3e106c822695e67ab8"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-api@1.67.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/open-telemetry/opentelemetry-java"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-context@1.67.0?type=jar",
+      "group" : "io.opentelemetry",
+      "name" : "opentelemetry-context",
+      "version" : "1.67.0",
+      "description" : "OpenTelemetry Context (Incubator)",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "4eb1684aa24d6cba8f739d635726e9cf"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1c669bff2a92842a625ce2e2e200d2f2277cc7e2"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "40fb813fb5e27ec2691daa29c81b572b5b1541ef9b41e62490c3ee3e6407c55e"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "85cfb4ceb653fd8be0f4095086c8df0e0bcc0f49c3c224757f8ef5a8ea69f64da514217cbb4c473baf2f5c39b9953c348d2a0d63208277ab611b0d87434be97f"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "f420b1445f27c070ece3b791f43dfc317ebaee6937fad1b1b847da4631c4bc91ff2274e7cf97a9aa3ac585e0501edfb2"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "9a374fe712eaf8f67d244303acb906335112670a2ebc744d266de5b55e159fe483b478703f6ee77d633d854c68d0b121"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "0d42d98a13b73c25e01e0695ac123697624c17f6a671605ce72097201408a110"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "ecc66eefc6147e3cb296e69dcd544d0ce18f1b85fc6b52070f3ebb29bfea415cc8fb09bc0a9287309f8e298d06780fc25af0c71a5f708a3009df397eec26a883"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-context@1.67.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/open-telemetry/opentelemetry-java"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-common@1.67.0?type=jar",
+      "group" : "io.opentelemetry",
+      "name" : "opentelemetry-common",
+      "version" : "1.67.0",
+      "description" : "OpenTelemetry API Common",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "7c598a21baa1e0b23307a332400679f0"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "3f6ecafdf85070807d9111b5027557eefdedfebf"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "da97bdb395418e16ecdcbe7ad3497f45b9e767ceda4ae7e86133e7a757ac377f"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "2997effeb87b6dfbbee40e46d6610abb5cce2e3ce5a347cbd336502e47eecc5688f4c49155aae004940730eb4c8c4e5c9e6aac6af4a29172a9363d5e4fea1f29"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "46d06a771540b9cc0a293663e1964bf96d2f8a9348a5182f2b11cc81d89ffa75eb4d40daa5188c42cc4a5d91f71e3456"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "e9c922fac9fe59f2d8fdeb43f120c1048b3e38f99ee7fca7eecc9efb68d6982675e18b46890e6acda933ae1a8fbf308e"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "2fdde7b3a570a0f532f0c4ae0abadfb652b848dcc60761c58b2a1ad826faddfd"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "daabb9b3d130327d1f211e94bc2e886ff741d5f901cd82f99cbf4651f1396e3bb1cf7054904463cbda7df3837966e37d91d8ebc293a6305cce7ff3a6b4c7e48e"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-common@1.67.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/open-telemetry/opentelemetry-java"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-observability@1.0.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar",
+        "pkg:maven/io.opentelemetry/opentelemetry-api@1.67.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-api@1.67.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.opentelemetry/opentelemetry-context@1.67.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-context@1.67.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.opentelemetry/opentelemetry-common@1.67.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-common@1.67.0?type=jar",
+      "dependsOn" : [ ]
+    }
+  ]
+}

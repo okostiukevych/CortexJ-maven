@@ -1,0 +1,976 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.5",
+  "serialNumber" : "urn:uuid:b6249363-9eac-3040-bf00-edb9d02b890e",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-10-25T02:35:20Z",
+    "lifecycles" : [
+      {
+        "phase" : "build"
+      }
+    ],
+    "tools" : {
+      "components" : [
+        {
+          "type" : "library",
+          "author" : "OWASP Foundation",
+          "group" : "org.cyclonedx",
+          "name" : "cyclonedx-maven-plugin",
+          "version" : "2.9.1",
+          "description" : "CycloneDX Maven plugin",
+          "hashes" : [
+            {
+              "alg" : "MD5",
+              "content" : "9c7a565cf28cce58557d0c621c5ea4b1"
+            },
+            {
+              "alg" : "SHA-1",
+              "content" : "be882d5a22050bfa9d19090b1420c188617d0e1c"
+            },
+            {
+              "alg" : "SHA-256",
+              "content" : "698e0f37184a5b28c245c4065fd036dfce253b52f82fbb7113d81d36326cc249"
+            },
+            {
+              "alg" : "SHA-512",
+              "content" : "c0f0b11026858166f872a2eb54719492e5cecaa0bc9cd6b30b3ecb4a174eed220f4a1b5829d18d6734128e778d3cb3db7ffed177c92866133129cb29081814a0"
+            },
+            {
+              "alg" : "SHA-384",
+              "content" : "d80964707dfe5caca8c70521d5066f57589304c0a657e6fbc7c0614ea0fc7b3b3dbe7778361eee0f54ba111e9cb0ffcb"
+            },
+            {
+              "alg" : "SHA3-384",
+              "content" : "80bc3a275d9514bc457461ff52a72add8c7ecbbc01d8912efce57139016c544ee776981851be0a58fa977ab4221f703f"
+            },
+            {
+              "alg" : "SHA3-256",
+              "content" : "142317d6f245390f4fd2d0c100b16281b8dfc5c0c2cff86943bdcc97039cb699"
+            },
+            {
+              "alg" : "SHA3-512",
+              "content" : "af0fb9137c90b65d1a07f72e4d51ae509956cdb8800f35c961b037cdda1fe4a14ce3b496cef71ba85f1621affcfe29cd42704ae4191ff0b090a9602087c8997b"
+            }
+          ]
+        }
+      ]
+    },
+    "component" : {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-convert-lora@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-convert-lora",
+      "version" : "1.0.1",
+      "description" : "Offline GGUF-side LoRA merge: dequantize, apply adapter, requantize, manifest (ADR-029). Java 17.",
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-convert-lora@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/converters/cortexj-convert-lora"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/converters/cortexj-convert-lora"
+        }
+      ]
+    },
+    "properties" : [
+      {
+        "name" : "maven.goal",
+        "value" : "makeBom"
+      },
+      {
+        "name" : "maven.scopes",
+        "value" : "compile,provided,runtime,system"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-convert-gguf@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-convert-gguf",
+      "version" : "1.0.1",
+      "description" : "CortexJ - AI runtime orchestration and model portability platform for the JVM",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "ab927e1789250fb626166d53b9774123"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d6c5ac494f62749362a7f8950c23ae90c5db7549"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "bd2da409d421bc00b973ed944d66e223c84c2e949f05a2197cdc250d90040a48"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "b5c70eeedc8cc9ed19046922a2e1261fdac6b4f4fa84c01982e71211c19709a47237e6ab9637b982c19ba1f4084c788b44fda48cbac14f121d52715d4dd7007b"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "905de8ac9179a45b1597cba343397d395b25c6c4f0c62aaf2268ac4cc7ca82517c7169ec0b7596061ec4e36684d84d75"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "b94de982d286ae786e8d11cf450021bb1d3dc4c4aa163b0b190208cbb94625b0475015c41048f11c260eac9bd7e81f2e"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "08fd8461c9d5918ed6978de1451af02f1bf0f2c7262a2d4126947a8b0a2c36f9"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "312bdad0eaa25d0341d817b924d2744a024b8519a42662e81d1d9a69e6d73fcadf66adbb761f8f66fc9535cfc0f5dc3f230380c49aecb433db0b4da07c3b1fbf"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-convert-gguf@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/converters/cortexj-convert-gguf"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/converters/cortexj-convert-gguf"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-api",
+      "version" : "1.0.1",
+      "description" : "Shared public API, Java 8 baseline. No framework or runtime engine dependencies (AP-001, AP-002).",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "1b95bc61f261246a52d3b9ad79f3b6b4"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d443b3bfa03a169610e38818090797dc7f5ef251"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "809f1e14ef29314fa41f8257a145d2c130faebff90c4b0ab76509528f60bccbb"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "df4ab066c01226c5130afd19db8317754f7a92b6341c370567556d66d1e3fcc7c795a786ada2ea3310321e16ac2154f56070c913a4de0f49817c3b1c15a6dc64"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "0efd230894adb361d366bf62f429d59701f3d7ea1e143219123c7726fad50b741ef20c4d76d2d84ea2913510eeebd877"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "7486d30e63aabe60dc7f06702889099c0a735bb15f4a9f5bb1cd577c0bd9b0fa3904c59daac873c824d429ec24a5cea4"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "f4a45c10d2d11f7a48337a8d02debe38602e267fd90880a4a7812ce73450a5ed"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "dfa41ddc661dfddff9756661f530c946f0340bc46485190f068a508203c30308c04bbe4d0e1aed26febe585269db86f3f21497c072e138ba4da4bf95982a675a"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-api"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-model@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-model",
+      "version" : "1.0.1",
+      "description" : "CortexJ - AI runtime orchestration and model portability platform for the JVM",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "80e7fb0ceda87cd7c9887c1dc6dd0f7a"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "c647e66639d9a8598a3c32f593c142aea4395996"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "83d28fed8bcb2c20054220cc698748f2a2c47bf83347dcbdca9b53fc3af99143"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "c781aa035807b7b3ab17bc42e55ea6070fffc8470813f43f335ee57329ced0fa79a5c5b754d6109bf5d67bb2f29027432892495110e47cbcc65bbcccee371d98"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "618b1e1cc69f827aa5661ab2448fc4faec0b13ff9586a79fbd82011a8cbe48496129e4b3a5d04fa7fe64b9e7c23bb58f"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "883e8aaf90db59115a6f676b134efe57e3c2b5b7304f5e21cc1c8c0cee6de6175fd8631800b4cc5cabddf2c2bacad8b2"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "0ba19c4d0795f21aeac1d9081d7b8ec5d85ae2ae71e16667e4430259c458a00a"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "c20f73e31a55b94148a629a01e031b41b80fa2e284169cf53fae823fd4f329420ee1870243ef62f4302163e2b88b8cdc4bf016d27226ebc681eef42870788c56"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-model@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-model"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-model"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-spi@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-spi",
+      "version" : "1.0.1",
+      "description" : "CortexJ - AI runtime orchestration and model portability platform for the JVM",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "05e9ed644bab2866c306da0af09e0eaa"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "2c5526746ecbd0300ea94c4c1ccae02a52378e03"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "5d3eaf8fd2347bc373beaf0c89bd959c941da6150eb07de1f60f3c0b26169a44"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "cb8128f44f3ade79f3ac61625a527f3f7478834822ba443430760526600d128894baa94cc830da595c33e76fd229f7e6d1c617b6a6893d848aa636565d36e301"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "f1ea23efdd6243fdd9593eb3df19cc486117fe0182db4d07e6c9c5dd3a810fd70e2a0d825145cd8715a09d8b498f2242"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "eabd95348bc33754bcf12a58fceecf8d117243c762d8e8a8ae649b2a83279329e410efc4841e16ef71d2ffbc52568f0e"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "255e68601e35962744d9bee37ede6182f30940578e3edbad583f5d99a6437dde"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "95b1bc902d8c21d84bcb3b531804057e6f828a4a7dfa2eb74e88af9ce07a262b453d3a1f0b7cf968ca0745f0770c558fa7646b20322e031b4e4fa1e3bb80b5c9"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-spi@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-spi"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-spi"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-databind",
+      "version" : "2.22.4",
+      "description" : "General data-binding functionality for Jackson: works on core streaming API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "e782b43929d9cb465924a105bdbf2db8"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1ff5a55d62432f57e8044394976e598af0c5b3b8"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "d4cbf8947087f305869826801913abdc50735a1fab2074a1993e7bc67ca974a3"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "688ee3a248895070623288bbbd1050e1c14f54d24ddac9be1e624e264eed8d88a6ca07ae90af6056bed1e5f1d0c9ac9db503cbcaaa45db7ba8ca213d3387dde6"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "82b6ee17013047935bf6da141a1084a625200883c04984c6d07b65ea41925b7eeee1674aeffcef37d1e724e6727951a6"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "39acae150a64e2fead35eecc17bd17f3fae8c003ff493899da4e540cd6af292e883b5d71102066efff91b83c256fcc27"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "a7729d3990f1a7ca650383073604455f172d267b0152465880ad5bc0efa6741f"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "8f01016a09ec87f9d182f006026d3c14d7098b3548aa34501db40a3b823c933ac278b7148c96606c8c441a746ea63f0f8ceb6fa7067546649816c678ab4a5962"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://central.sonatype.com/api/v1/publisher"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-databind/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-databind"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-annotations",
+      "version" : "2.22",
+      "description" : "Core annotations used for value types, used by Jackson data binding package.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "04c11c456fd1e21b9a21c25c665109cc"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "15c67f9498d6934cff9510fc70c5a12e52290457"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "21ddb598807d3a51a876704eb979d9296e1c6a6f47ab1826ff88c6d6a127a2d0"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "63b597ec02b4e31c57266d9b96f05f301f217bc12ffb7ba046a5658d2829728930a559947b98eb6c3cc448413a96b4939427aa669ae1e2dc3597ab5d5d287f9f"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "35b6fe651afeed54d1e6f7a39ac6cf6fdbafacdf2e3bdff7b29b965ccb79a0c53342a56bf0ecea4d6c4c4651b1d6aa19"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "72267dc54c4175c42ca0dd430a87b12cc68619a8777be2048e1d2f0747db884a568b5c346c77c9c8c0714ab96018f5f7"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "6bfc7b4ba70779fe5f0b1e2af585abab982f7929a68beb2c0e62ea2e2a321de0"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "3f1bdfa32f7df76ac14cd2a3e689b65066fa0a6a760a9b8b1121773bb1b043a44587d4148c67f361dc6c630e6b31f29b2691a57d47caabea5ca23ae44af34a5e"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://central.sonatype.com/api/v1/publisher"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-annotations/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-annotations"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-core",
+      "version" : "2.22.4",
+      "description" : "Core Jackson processing abstractions (aka Streaming API), implementation for JSON",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "fa9ba32880026c653cc151bed0c28498"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d753ae59bae7dcb183f856da541c5b27272088ce"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "2d30c375cddea9657a1e1ef97547a2694b663b355facb4de53a097782b312d1a"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "3b0d500043699ce40fc6befc04c9dbf3e8067de453098fba53d1891793bd3da80955e44536d113fac6fc8fb58264e47b265ab3466b3c6fd4bca111487ac24700"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "8b3beecfc5464c704601fe9cfe90ccabb7090381676da9d7514b27c979c4580baa1a343c9724146fc86c0568cad6d53c"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "30e3394466b713fa98b37e6d98948d38b26e2be090f35902f3416fa93c69c78d7d5e69d035a8403d720bb7106f29e716"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "edc5681da0d239439298ed33621f4aa1991aeca9a29be0c1d6ba76036dd8dfdc"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "9e9e02839c0cbe5c5aafb5af23d25db2bc71754a10c18998aee1fe7d216fdf7dd6602859480d5e76991f9393587ac215633f9a1740329715db40904532aaf483"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson-core"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://central.sonatype.com/api/v1/publisher"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-core/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-core"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-cache@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-cache",
+      "version" : "1.0.1",
+      "description" : "CortexJ - AI runtime orchestration and model portability platform for the JVM",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "feabf4edb44eb437f401ca332251d037"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "b45353f63c002aa2a4dfb9f1cd0455a6da5e2eef"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "8ad93e5f9f1bc503f6bc0f2732e1439edc02050ca9e79d551d9d3da3829ad524"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "84df446936e662ba2a431337478e8bdd79b390360441729a86dba65010846acf65e3246eb4d392fec7f4ee96d35ed172a5d4b5c9954db6e6df9463e4c4ef5904"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "14988e5aee478538a4db48b2996fab0822d9ccaf1ce1b03c0521e2e804d4d1c70d8c2e6727bc441440de43b9c29efad6"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "f537debdcc78872580885bd12391739035048936c5c86f4bced0c01dc76937d78fdb3e5297b5d12d8abfd7a19c2a537c"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "5bfb0d77c66b5014cf3af52e99b68768e5da91fec159e3e87138a9547b2c21b2"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "608a3339520e0b31d8af57418a274bb66778b1ac6aab5fb18b9e245aa752714737fd72df6845209a5b5444f4a031c921e8a14074062e581ec6cd87d95e2b9556"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-cache@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-cache"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-cache"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-train-peft@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-train-peft",
+      "version" : "1.0.1",
+      "description" : "LoRA adapter artifacts: config, low-rank matrices, merge math and safetensors container (ADR-022). Java 17, pure Java.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "722d94439db0f2215a7e5bb870b399f6"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "5a4aa9923b7548fef642d332b25560b0d8b97309"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "2272f7472fdfe4839ffcf858373de33efad970abc594c5b0115a340b81419184"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "df8095e24d7622ec66da452b79ff794e72d43485e59a4c0fdf1fdc5f776f0d0343e0982974d52a03331c24d06b25590dcbb533a484121ff2a4ab8ea7efd86e85"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "0cf56e29cf83604a6679445efcf881e161a638b68977f4eee29e821e46d213a39fc082629c55db7365b3358736688b72"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "0334201f17d34caeb700093aa159f39f8ca63ef9faa1940b9821e133e880412776f5e269c367483a0ef7f44862087d78"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "b08cb7948a959baf73e04f14756f782a2be06d378264bb8aac23799756ed5023"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "f42f2979fe6d8465cdc722b0f462d4274e7a0977ca5c1810bbc92bb4be94a9d6d5444cb7ed38211fc13c3e02a22a894486bc32893cff1f27dfb434281f8f337c"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-train-peft@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/train/cortexj-train-peft"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/train/cortexj-train-peft"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-train-api@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-train-api",
+      "version" : "1.0.1",
+      "description" : "Backend-neutral training contracts: TrainingJob/Trainer/Optimizer/Loss/Checkpoint plus backend SPI (ADR-021). Java 17.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "bf482cf993a67bb0be6cf846519decc8"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "c507208bd4a0635e823642bcf2bcd785f49f310d"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "64f192319edaafb014b9f2472aa2bfc7483279b1df0235ccf034cd932f9042fc"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "fe4a1e5a8678f9420cf789fb5419d88aa08e4750e16fa8ec0fb42966dedcf6bc7d1bb05bee36dee38ec7dcaae178b66479ce187c5b33ebc3b414a25121ca94e1"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "2b207a7636917c8c776957048fe71d4db6add980421df621db5337da678fb2b1c6e2416e4a38e431e61025fad68aa37d"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "d3cd4bf5d631cc4daad0497aeac799d17d5ea19eaeefa2141e578f1cef01817656468d440d047f37c7fcb7bb9483d6d2"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "fc48d99fcc6ad9f4e8c45ae920d02c529ca47a611a68108e015ec05a476509b3"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "7ed8dc3dec6abd472fe4618423eced342cceefa68618f35a34c62f8a3790937de446213e8e9d1ceaee96b5512ff3af0c4ef54bee79e9e4a4f4c9637dad4caca0"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-train-api@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/train/cortexj-train-api"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/train/cortexj-train-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-provenance@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-provenance",
+      "version" : "1.0.1",
+      "description" : "Shared versioned provenance manifest (ADR-020). Java 8, Jackson-free.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "d25a21de9a6c258f0806e9c82a9e7a8a"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "42b3fef94d230f4ff6fb9743ba12f3c75e84682c"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "c283b80cf7349426852eae52b553fcb67a043682cde2b443cf1a3ca169eeb6d1"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "e1701c0a9954a852a470b19c0ce1faf228cb4f96d02db689ce45095307238f606763457b2cdea2631bcfee3627afdd79752e364adbd0aac402f503e87f823887"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "dfa6d0723f51dce302b129bc1745ede1025ec6c7ed7d6647c6aa83fd4672881cbdadeb0fffb10f220cd21a9ecb3a8a3f"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "43bb1581551448aa73a531c5f1f7e5959da1c753f81aa790954054f522907a09f50d409715f0625119376f0d7ba2fd2b"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "378491efa4f81bc87b956c8301383ef6a50c028778e5f52990f05ef97e70c48f"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "7d38c55e50fc8d85a2c89b37f4ccac3e21b364bba4719a534adc2c68e192a29d04ec2c3d2ef00ba6f43d09e09b94f80b14ecc10b73baca2dd42152eaa14de0e5"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-provenance@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-provenance"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-provenance"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-model-metadata@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-model-metadata",
+      "version" : "1.0.1",
+      "description" : "Shared lightweight model identity contracts (ADR-020). Java 8, zero runtime dependencies.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "b2c71c0a563aad384e69c47fda08de4d"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "a783cf468fe428a4e9b956a8c062f015b7d01d05"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "7fb8eafc7441ad09db1cb947941f1afd3cae84d47b9191783bf2e2fd9e59c812"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "9653e84785fa2b056f37c01d4a02343cabfe415c304216e18dc57b58a0b813bc85a8177a891e2dc7ebc9e76c81f4bb73d8e3f5093f30d4a95a8a39f8606172c4"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "1703d03fa9458a24c2fbc65428a72fdc13b07d8c4ebd09c9be8706b9f03d249005bde0a2fa9743c84b109a2224032ea5"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "ef963b5898566194db8a6665373a6f4150950a9946e025b50d083842d65231322e74516c80cdd03b47af67cedf4fbd99"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "07d2cfb8ef8a9ffac3b14caeba7c831a27287f1951ca7859a21e226ab441f6f8"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "9f2c04a3904bf010ba80af5e8bd0b8829de15e6630d01c6d8bb66c147a0cbfa17999c14f487d1d08d2b095d1294d8ec9f196fe332f0c260657c4031ecfff57c9"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-model-metadata@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-model-metadata"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-model-metadata"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-convert-lora@1.0.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-convert-gguf@1.0.1?type=jar",
+        "pkg:maven/io.cortexj/cortexj-train-peft@1.0.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-convert-gguf@1.0.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar",
+        "pkg:maven/io.cortexj/cortexj-model@1.0.1?type=jar",
+        "pkg:maven/io.cortexj/cortexj-cache@1.0.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-model@1.0.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar",
+        "pkg:maven/io.cortexj/cortexj-spi@1.0.1?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-spi@1.0.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-cache@1.0.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-train-peft@1.0.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-train-api@1.0.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-train-api@1.0.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-api@1.0.1?type=jar",
+        "pkg:maven/io.cortexj/cortexj-provenance@1.0.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-provenance@1.0.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-model-metadata@1.0.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-model-metadata@1.0.1?type=jar",
+      "dependsOn" : [ ]
+    }
+  ]
+}

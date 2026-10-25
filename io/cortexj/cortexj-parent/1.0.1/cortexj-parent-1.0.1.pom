@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>io.cortexj</groupId>
+  <artifactId>cortexj-parent</artifactId>
+  <version>1.0.1</version>
+  <packaging>pom</packaging>
+
+  <name>CortexJ Parent</name>
+  <description>CortexJ - AI runtime orchestration and model portability platform for the JVM</description>
+
+  <!-- Central publication requires license metadata on every artifact; the
+       parent declaration is inherited by all modules (LICENSE file at the
+       repository root carries the Apache License 2.0 text). -->
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <url>https://github.com/okostiukevych/CortexJ</url>
+
+  <!-- Central publication metadata (validated by the release profile):
+       SCM + developers are required on staged artifacts. -->
+  <scm>
+    <connection>scm:git:https://github.com/okostiukevych/CortexJ.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/okostiukevych/CortexJ.git</developerConnection>
+    <url>https://github.com/okostiukevych/CortexJ</url>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>okostiukevych</id>
+      <name>okostiukevych</name>
+      <url>https://github.com/okostiukevych</url>
+      <organization>CortexJ</organization>
+      <organizationUrl>https://github.com/okostiukevych/CortexJ</organizationUrl>
+    </developer>
+  </developers>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+
+        <cortexj.shared.release>8</cortexj.shared.release>
+
+        <!-- audit #108: the japicmp compat profile skips cleanly unless a
+             baseline version is explicitly provided:
+             mvn verify -Pcompat -Dcortexj.compat.skip=false \
+                        -Dcortexj.api.baseline=<released-version> -->
+        <cortexj.api.baseline>none</cortexj.api.baseline>
+        <cortexj.compat.skip>true</cortexj.compat.skip>
+        <!-- audit 2026-10-07 (#148): compat scope covers api+spi+model+
+             planner - each module overrides this with its own artifact id
+             so -Pcompat compares like with like -->
+        <cortexj.compat.artifact>cortexj-api</cortexj.compat.artifact>
+        <surefire.excludedGroups>perf</surefire.excludedGroups>
+
+        <jackson.version>2.22.4</jackson.version>
+        <junit.version>5.14.4</junit.version>
+        <onnxruntime.version>1.31.0</onnxruntime.version>
+        <jinfer.version>0.3.1</jinfer.version>
+        <opentelemetry.version>1.67.0</opentelemetry.version>
+
+    <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
+    <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
+    <maven-enforcer-plugin.version>3.4.1</maven-enforcer-plugin.version>
+    <maven-jar-plugin.version>3.4.1</maven-jar-plugin.version>
+    <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
+    <maven-javadoc-plugin.version>3.12.0</maven-javadoc-plugin.version>
+    <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
+    <central-publishing-plugin.version>0.12.0</central-publishing-plugin.version>
+    <cyclonedx-maven-plugin.version>2.9.1</cyclonedx-maven-plugin.version>
+  </properties>
+
+  <modules>
+    <module>bom</module>
+    <module>api</module>
+    <module>spi</module>
+    <module>model</module>
+    <module>model-metadata</module>
+    <module>provenance</module>
+    <module>hardware</module>
+    <module>cache</module>
+    <module>streaming</module>
+    <module>observability</module>
+    <module>planner</module>
+    <module>core</module>
+    <module>repositories/local</module>
+    <module>repositories/huggingface</module>
+    <module>repositories/http</module>
+    <module>runtimes/remote-openai</module>
+    <module>runtimes/onnx</module>
+    <module>runtimes/llamacpp</module>
+    <module>runtimes/djl</module>
+    <module>runtimes/isolated</module>
+    <module>worker</module>
+    <module>converters/gguf</module>
+    <module>converters/safetensors</module>
+    <module>server</module>
+    <module>maven-plugin</module>
+    <module>examples</module>
+    <module>declarative</module>
+    <module>platform/java8</module>
+    <module>starters/java8</module>
+    <module>tck</module>
+  </modules>
+
+  <profiles>
+    <profile>
+      <id>jdk8-compiler</id>
+      <activation>
+        <jdk>1.8</jdk>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+              <release combine.self="override"/>
+              <source>8</source>
+              <target>8</target>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>jdk11plus</id>
+      <activation>
+        <jdk>[11,)</jdk>
+      </activation>
+      <modules>
+        <module>platform/java11</module>
+        <module>starters/java11</module>
+        <module>streaming/flow</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>jdk17plus</id>
+      <activation>
+        <jdk>[17,)</jdk>
+      </activation>
+      <modules>
+        <module>platform/java17</module>
+        <module>starters/java17</module>
+        <module>starters/spring-boot</module>
+        <module>integrations/spring-ai</module>
+        <module>integrations/langchain4j</module>
+        <module>examples/spring-ai</module>
+        <module>converters/lora</module>
+        <module>data/data-api</module>
+        <module>data/data-csv</module>
+        <module>data/data-parquet</module>
+        <module>data/data-jdbc</module>
+        <module>data/data-tablesaw</module>
+        <module>data/data-arrow</module>
+        <module>data/data-json</module>
+        <module>data/data-tribuo</module>
+        <module>experiments/experiments-api</module>
+        <module>experiments/experiments-local</module>
+        <module>lab/lab-api</module>
+        <module>lab/notebook</module>
+        <module>train/train-api</module>
+        <module>train/train-data</module>
+        <module>train/train-peft</module>
+        <module>train/train-djl</module>
+        <module>train/train-djl-models</module>
+        <module>train/train-remote</module>
+        <module>train/train-distributed</module>
+        <module>train/train-experiments</module>
+        <module>examples/north-star</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>jdk21plus</id>
+      <activation>
+        <jdk>[21,)</jdk>
+      </activation>
+      <modules>
+        <module>platform/java21</module>
+        <module>starters/java21</module>
+        <module>tensor/tensor-api</module>
+        <module>tensor/tensor-cpu</module>
+        <module>tensor/tensor-vector</module>
+        <module>tensor/autograd</module>
+        <module>research/nn</module>
+        <module>research/research</module>
+        <module>benchmarks</module>
+        <module>train/train-multinode</module>
+        <module>examples/java21</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>jdk25plus</id>
+      <activation>
+        <jdk>[25,)</jdk>
+      </activation>
+      <modules>
+        <module>platform/java25</module>
+        <module>starters/java25</module>
+        <module>runtimes/jinfer</module>
+        <module>tensor/tensor-libtorch</module>
+        <module>cli</module>
+        <module>examples/java25-jinfer</module>
+      </modules>
+    </profile>
+  
+  <profile>
+    <id>perf</id>
+    <properties>
+      <!-- audit #128: run the perf-tagged tests explicitly:
+           mvn test -Pperf -->
+      <surefire.excludedGroups></surefire.excludedGroups>
+    </properties>
+  </profile>
+
+  <profile>
+    <id>jpms</id>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>3.6.1</version>
+          <executions>
+            <execution>
+              <id>jpms-classpath</id>
+              <phase>generate-sources</phase>
+              <goals>
+                <goal>build-classpath</goal>
+              </goals>
+              <configuration>
+                <outputFile>${project.build.directory}/jpms-classpath.txt</outputFile>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>3.6.4</version>
+          <executions>
+            <execution>
+              <id>compile-module-info</id>
+              <phase>process-classes</phase>
+              <goals>
+                <goal>exec</goal>
+              </goals>
+              <configuration>
+                <executable>/bin/sh</executable>
+                <arguments>
+                  <argument>-c</argument>
+                  <argument>test -r ${project.basedir}/src/main/jpms/module-info.java || exit 0; mod=$(sed -n 's/^\(open \)\{0,1\}module \([a-zA-Z0-9._]*\).*/\2/p' ${project.basedir}/src/main/jpms/module-info.java); test -n "$mod" || exit 0; mkdir -p ${project.build.outputDirectory}/META-INF/versions/9; MP=$(cat ${project.build.directory}/jpms-classpath.txt); if test -n "$MP"; then MPFLAG="--module-path $MP"; else MPFLAG=""; fi; ${java.home}/bin/javac --release 9 -d ${project.build.outputDirectory}/META-INF/versions/9 --patch-module "$mod=${project.build.outputDirectory}" $MPFLAG ${project.basedir}/src/main/jpms/module-info.java</argument>
+                </arguments>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <configuration>
+            <archive>
+              <manifestEntries>
+                <Multi-Release>true</Multi-Release>
+              </manifestEntries>
+            </archive>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+  </profile>
+  <profile>
+    <id>compat</id>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>com.github.siom79.japicmp</groupId>
+          <artifactId>japicmp-maven-plugin</artifactId>
+          <version>0.23.1</version>
+          <configuration>
+            <oldVersion>
+              <dependency>
+                <groupId>io.cortexj</groupId>
+                <artifactId>${cortexj.compat.artifact}</artifactId>
+                <version>${cortexj.api.baseline}</version>
+              </dependency>
+            </oldVersion>
+            <newVersion>
+              <file>
+                <path>${project.build.directory}/${project.build.finalName}.jar</path>
+              </file>
+            </newVersion>
+            <parameter>
+              <onlyBinaryIncompatible>true</onlyBinaryIncompatible>
+              <excludes>
+                <exclude>io.cortexj.*.internal</exclude>
+              </excludes>
+            </parameter>
+            <skip>${cortexj.compat.skip}</skip>
+          </configuration>
+          <executions>
+            <execution>
+              <phase>verify</phase>
+              <goals>
+                <goal>cmp</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </build>
+  </profile>
+  <profile>
+    <id>sbom</id>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.cyclonedx</groupId>
+          <artifactId>cyclonedx-maven-plugin</artifactId>
+          <version>${cyclonedx-maven-plugin.version}</version>
+          <executions>
+            <execution>
+              <id>make-bom</id>
+              <goals>
+                <goal>makeBom</goal>
+              </goals>
+              <phase>package</phase>
+            </execution>
+          </executions>
+          <configuration>
+            <schemaVersion>1.5</schemaVersion>
+            <includeLicense>true</includeLicense>
+            <outputName>bom</outputName>
+            <outputFormat>json</outputFormat>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+  </profile>
+
+  <profile>
+    <id>spotbugs</id>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>com.github.spotbugs</groupId>
+          <artifactId>spotbugs-maven-plugin</artifactId>
+          <!-- 4.9.8.x bundles ASM that reads JDK 25 class files (major 69);
+               4.8.6.2 crashed the analysis on JDK 25 -->
+          <version>4.9.8.5</version>
+          <configuration>
+            <effort>Max</effort>
+            <threshold>Medium</threshold>
+            <xmlOutput>true</xmlOutput>
+            <failOnError>true</failOnError>
+            <excludeFilterFile>${maven.multiModuleProjectDirectory}/spotbugs-exclude.xml</excludeFilterFile>
+          </configuration>
+          <executions>
+            <execution>
+              <goals>
+                <goal>check</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </build>
+  </profile>
+
+  <profile>
+    <id>coverage</id>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>0.8.12</version>
+          <executions>
+            <execution>
+              <id>prepare-agent</id>
+              <goals>
+                <goal>prepare-agent</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>report</id>
+              <phase>test</phase>
+              <goals>
+                <goal>report</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </build>
+  </profile>
+
+  <!-- Maven Central publication (explicit: -Prelease).
+       Attaches sources + javadoc jars, signs them (GPG), and hands the
+       bundle to the Central portal. Normal builds are unaffected.
+       Prerequisites: OSSRH account with the io.cortexj namespace verified,
+       a GPG key published to a keyserver, and server credentials in
+       ~/.m2/settings.xml under the id 'central':
+         <server><id>central</id><username>TOKEN-USER</username>
+                 <password>TOKEN</password></server>
+       Full procedure: docs/releasing.md -->
+  <profile>
+    <id>release</id>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>${maven-source-plugin.version}</version>
+          <executions>
+            <execution>
+              <id>attach-sources</id>
+              <goals>
+                <goal>jar-no-fork</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>${maven-javadoc-plugin.version}</version>
+          <configuration>
+            <!-- javadoc links must target the artifact's own language level,
+                 never the building JDK -->
+            <release>${cortexj.shared.release}</release>
+            <doclint>-missing</doclint>
+            <quiet>true</quiet>
+          </configuration>
+          <executions>
+            <execution>
+              <id>attach-javadoc</id>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-gpg-plugin</artifactId>
+          <version>${maven-gpg-plugin.version}</version>
+          <executions>
+            <execution>
+              <id>sign-artifacts</id>
+              <phase>verify</phase>
+              <goals>
+                <goal>sign</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.sonatype.central</groupId>
+          <artifactId>central-publishing-maven-plugin</artifactId>
+          <version>${central-publishing-plugin.version}</version>
+          <extensions>true</extensions>
+          <configuration>
+            <publishingServerId>cortexj-central</publishingServerId>
+            <!-- first releases land in the portal waiting room: a human
+                 reviews and hits publish; never auto-release unattended -->
+            <autoPublish>false</autoPublish>
+            <waitUntil>validated</waitUntil>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+  </profile>
+
+  <!-- Static Maven repository for GitHub Pages. Produces the same artifacts as
+       a Central release (sources + javadoc) without GPG or portal validation:
+         mvn clean deploy -Ppages -DskipTests
+       writes a complete Maven layout to target/pages-repo, published to the
+       CortexJ-maven repository. Override the location with
+       -Dcortexj.pages.repo=/absolute/path if needed. -->
+  <profile>
+    <id>pages</id>
+    <properties>
+      <cortexj.pages.repo>${maven.multiModuleProjectDirectory}/target/pages-repo</cortexj.pages.repo>
+    </properties>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>${maven-source-plugin.version}</version>
+          <executions>
+            <execution>
+              <id>attach-sources</id>
+              <goals>
+                <goal>jar-no-fork</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>${maven-javadoc-plugin.version}</version>
+          <configuration>
+            <release>${cortexj.shared.release}</release>
+            <doclint>-missing</doclint>
+            <quiet>true</quiet>
+          </configuration>
+          <executions>
+            <execution>
+              <id>attach-javadoc</id>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </build>
+    <distributionManagement>
+      <repository>
+        <id>cortexj-pages</id>
+        <url>file://${cortexj.pages.repo}</url>
+      </repository>
+    </distributionManagement>
+  </profile>
+</profiles>
+
+  <!-- Baseline repository for the japicmp compat profile (spec §74): the
+       GitHub Pages Maven repository publishes released versions; resolution
+       requires this declaration (Central remains a future channel). -->
+  <repositories>
+    <repository>
+      <id>cortexj-maven</id>
+      <url>https://okostiukevych.github.io/CortexJ-maven/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.microsoft.onnxruntime</groupId>
+        <artifactId>onnxruntime</artifactId>
+        <version>${onnxruntime.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.qxotic</groupId>
+        <artifactId>jinfer-chat</artifactId>
+        <version>${jinfer.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.opentelemetry</groupId>
+        <artifactId>opentelemetry-api</artifactId>
+        <version>${opentelemetry.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.opentelemetry</groupId>
+        <artifactId>opentelemetry-sdk</artifactId>
+        <version>${opentelemetry.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.opentelemetry</groupId>
+        <artifactId>opentelemetry-sdk-testing</artifactId>
+        <version>${opentelemetry.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>${maven-compiler-plugin.version}</version>
+          <configuration>
+            <release>${cortexj.shared.release}</release>
+            <compilerArgs>
+              <arg>-Xlint:-options</arg>
+            </compilerArgs>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>${maven-surefire-plugin.version}</version>
+          <configuration>
+            <!-- audit #128: perf-tagged tests are separated from the default
+                 run; execute them explicitly with -Pperf -->
+            <excludedGroups>${surefire.excludedGroups}</excludedGroups>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>${maven-jar-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-enforcer-plugin</artifactId>
+          <version>${maven-enforcer-plugin.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>enforce-build-jdk</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireJavaVersion>
+                  <version>[8,)</version>
+                  <message>CortexJ requires JDK 8+ to build. The base module set targets Java 8; LTS platform modules (java11/17/21/25) activate automatically on newer JDKs.</message>
+                </requireJavaVersion>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

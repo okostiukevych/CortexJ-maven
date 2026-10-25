@@ -1,0 +1,250 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.5",
+  "serialNumber" : "urn:uuid:29ba47d3-274c-324c-93f4-54f39361ad89",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-10-25T02:35:37Z",
+    "lifecycles" : [
+      {
+        "phase" : "build"
+      }
+    ],
+    "tools" : {
+      "components" : [
+        {
+          "type" : "library",
+          "author" : "OWASP Foundation",
+          "group" : "org.cyclonedx",
+          "name" : "cyclonedx-maven-plugin",
+          "version" : "2.9.1",
+          "description" : "CycloneDX Maven plugin",
+          "hashes" : [
+            {
+              "alg" : "MD5",
+              "content" : "9c7a565cf28cce58557d0c621c5ea4b1"
+            },
+            {
+              "alg" : "SHA-1",
+              "content" : "be882d5a22050bfa9d19090b1420c188617d0e1c"
+            },
+            {
+              "alg" : "SHA-256",
+              "content" : "698e0f37184a5b28c245c4065fd036dfce253b52f82fbb7113d81d36326cc249"
+            },
+            {
+              "alg" : "SHA-512",
+              "content" : "c0f0b11026858166f872a2eb54719492e5cecaa0bc9cd6b30b3ecb4a174eed220f4a1b5829d18d6734128e778d3cb3db7ffed177c92866133129cb29081814a0"
+            },
+            {
+              "alg" : "SHA-384",
+              "content" : "d80964707dfe5caca8c70521d5066f57589304c0a657e6fbc7c0614ea0fc7b3b3dbe7778361eee0f54ba111e9cb0ffcb"
+            },
+            {
+              "alg" : "SHA3-384",
+              "content" : "80bc3a275d9514bc457461ff52a72add8c7ecbbc01d8912efce57139016c544ee776981851be0a58fa977ab4221f703f"
+            },
+            {
+              "alg" : "SHA3-256",
+              "content" : "142317d6f245390f4fd2d0c100b16281b8dfc5c0c2cff86943bdcc97039cb699"
+            },
+            {
+              "alg" : "SHA3-512",
+              "content" : "af0fb9137c90b65d1a07f72e4d51ae509956cdb8800f35c961b037cdda1fe4a14ce3b496cef71ba85f1621affcfe29cd42704ae4191ff0b090a9602087c8997b"
+            }
+          ]
+        }
+      ]
+    },
+    "component" : {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-research@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-research",
+      "version" : "1.0.1",
+      "description" : "Academic and research workflow records: model/dataset cards, citation metadata, experiment bundles (ADR-028). Java 21.",
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-research@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/research/cortexj-research"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/research/cortexj-research"
+        }
+      ]
+    },
+    "properties" : [
+      {
+        "name" : "maven.goal",
+        "value" : "makeBom"
+      },
+      {
+        "name" : "maven.scopes",
+        "value" : "compile,provided,runtime,system"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-provenance@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-provenance",
+      "version" : "1.0.1",
+      "description" : "Shared versioned provenance manifest (ADR-020). Java 8, Jackson-free.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "d25a21de9a6c258f0806e9c82a9e7a8a"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "42b3fef94d230f4ff6fb9743ba12f3c75e84682c"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "c283b80cf7349426852eae52b553fcb67a043682cde2b443cf1a3ca169eeb6d1"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "e1701c0a9954a852a470b19c0ce1faf228cb4f96d02db689ce45095307238f606763457b2cdea2631bcfee3627afdd79752e364adbd0aac402f503e87f823887"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "dfa6d0723f51dce302b129bc1745ede1025ec6c7ed7d6647c6aa83fd4672881cbdadeb0fffb10f220cd21a9ecb3a8a3f"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "43bb1581551448aa73a531c5f1f7e5959da1c753f81aa790954054f522907a09f50d409715f0625119376f0d7ba2fd2b"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "378491efa4f81bc87b956c8301383ef6a50c028778e5f52990f05ef97e70c48f"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "7d38c55e50fc8d85a2c89b37f4ccac3e21b364bba4719a534adc2c68e192a29d04ec2c3d2ef00ba6f43d09e09b94f80b14ecc10b73baca2dd42152eaa14de0e5"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-provenance@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-provenance"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-provenance"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-model-metadata@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-model-metadata",
+      "version" : "1.0.1",
+      "description" : "Shared lightweight model identity contracts (ADR-020). Java 8, zero runtime dependencies.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "b2c71c0a563aad384e69c47fda08de4d"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "a783cf468fe428a4e9b956a8c062f015b7d01d05"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "7fb8eafc7441ad09db1cb947941f1afd3cae84d47b9191783bf2e2fd9e59c812"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "9653e84785fa2b056f37c01d4a02343cabfe415c304216e18dc57b58a0b813bc85a8177a891e2dc7ebc9e76c81f4bb73d8e3f5093f30d4a95a8a39f8606172c4"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "1703d03fa9458a24c2fbc65428a72fdc13b07d8c4ebd09c9be8706b9f03d249005bde0a2fa9743c84b109a2224032ea5"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "ef963b5898566194db8a6665373a6f4150950a9946e025b50d083842d65231322e74516c80cdd03b47af67cedf4fbd99"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "07d2cfb8ef8a9ffac3b14caeba7c831a27287f1951ca7859a21e226ab441f6f8"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "9f2c04a3904bf010ba80af5e8bd0b8829de15e6630d01c6d8bb66c147a0cbfa17999c14f487d1d08d2b095d1294d8ec9f196fe332f0c260657c4031ecfff57c9"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-model-metadata@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-model-metadata"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-model-metadata"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-research@1.0.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-provenance@1.0.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-provenance@1.0.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-model-metadata@1.0.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-model-metadata@1.0.1?type=jar",
+      "dependsOn" : [ ]
+    }
+  ]
+}

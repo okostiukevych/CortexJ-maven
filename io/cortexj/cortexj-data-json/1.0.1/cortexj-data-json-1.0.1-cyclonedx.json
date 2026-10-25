@@ -1,0 +1,179 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.5",
+  "serialNumber" : "urn:uuid:48f19e73-26ad-382e-9389-205d7e2e41f7",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-10-25T02:35:25Z",
+    "lifecycles" : [
+      {
+        "phase" : "build"
+      }
+    ],
+    "tools" : {
+      "components" : [
+        {
+          "type" : "library",
+          "author" : "OWASP Foundation",
+          "group" : "org.cyclonedx",
+          "name" : "cyclonedx-maven-plugin",
+          "version" : "2.9.1",
+          "description" : "CycloneDX Maven plugin",
+          "hashes" : [
+            {
+              "alg" : "MD5",
+              "content" : "9c7a565cf28cce58557d0c621c5ea4b1"
+            },
+            {
+              "alg" : "SHA-1",
+              "content" : "be882d5a22050bfa9d19090b1420c188617d0e1c"
+            },
+            {
+              "alg" : "SHA-256",
+              "content" : "698e0f37184a5b28c245c4065fd036dfce253b52f82fbb7113d81d36326cc249"
+            },
+            {
+              "alg" : "SHA-512",
+              "content" : "c0f0b11026858166f872a2eb54719492e5cecaa0bc9cd6b30b3ecb4a174eed220f4a1b5829d18d6734128e778d3cb3db7ffed177c92866133129cb29081814a0"
+            },
+            {
+              "alg" : "SHA-384",
+              "content" : "d80964707dfe5caca8c70521d5066f57589304c0a657e6fbc7c0614ea0fc7b3b3dbe7778361eee0f54ba111e9cb0ffcb"
+            },
+            {
+              "alg" : "SHA3-384",
+              "content" : "80bc3a275d9514bc457461ff52a72add8c7ecbbc01d8912efce57139016c544ee776981851be0a58fa977ab4221f703f"
+            },
+            {
+              "alg" : "SHA3-256",
+              "content" : "142317d6f245390f4fd2d0c100b16281b8dfc5c0c2cff86943bdcc97039cb699"
+            },
+            {
+              "alg" : "SHA3-512",
+              "content" : "af0fb9137c90b65d1a07f72e4d51ae509956cdb8800f35c961b037cdda1fe4a14ce3b496cef71ba85f1621affcfe29cd42704ae4191ff0b090a9602087c8997b"
+            }
+          ]
+        }
+      ]
+    },
+    "component" : {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-data-json@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-data-json",
+      "version" : "1.0.1",
+      "description" : "JSON Lines adapter over the Data API (ADR-019): flat-object records with type inference. Zero third-party dependencies, no Jackson.",
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-data-json@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/data/cortexj-data-json"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/data/cortexj-data-json"
+        }
+      ]
+    },
+    "properties" : [
+      {
+        "name" : "maven.goal",
+        "value" : "makeBom"
+      },
+      {
+        "name" : "maven.scopes",
+        "value" : "compile,provided,runtime,system"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-data-api@1.0.1?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-data-api",
+      "version" : "1.0.1",
+      "description" : "Thin tabular contracts: Schema/Column/Frame/Dataset/Split/Fingerprint (ADR-019). Java 17, no IO dependencies.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "89877755a8b23b314aa548180672163a"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "bfb19dcf75e8b6a3201701181a569331d60b881a"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "092b5a3a2a2590c74b1262788f859ae0004e7e821524e574d94cf7176882130f"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "451ad9778430801b895c246aac41abca829b9b4a615fb7452b1752c859de592cffa6d5cc1293115c96eb8d0e2fac9012bc02bc39c713fc8f2c25518d116c67d0"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "dabd2d8ba2e21f5f9ac866b6e5108bb5ac7aa4ecd02c282cce687a2a44974ad52ea8318fefb9523c6289380123255291"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "0501aa2b02d96330de3d04e955dc9bb22de89c2ea7946f528abceafb1676e38f78d8bf5b2df7b6578ea69d9457d70ec4"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "8f8d4d9ab497d35363ca7609c4845cc867ade50f5360f441559861c2ccd1858e"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "507b629511c72cdfbaf0a394028db8ef1c68e92b5a914315a639fe6085af5133aba1facf0490764d517751845ff83094ff31c856d4c162620090d115836f1d7c"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-data-api@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/data/cortexj-data-api"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/data/cortexj-data-api"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-data-json@1.0.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-data-api@1.0.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-data-api@1.0.1?type=jar",
+      "dependsOn" : [ ]
+    }
+  ]
+}
