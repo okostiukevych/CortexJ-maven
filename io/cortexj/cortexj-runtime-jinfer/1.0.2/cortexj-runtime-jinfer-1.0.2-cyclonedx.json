@@ -1,0 +1,1244 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.5",
+  "serialNumber" : "urn:uuid:2a8f2ea1-7fa6-300d-a647-383ec8b28098",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-10-26T05:50:36Z",
+    "lifecycles" : [
+      {
+        "phase" : "build"
+      }
+    ],
+    "tools" : {
+      "components" : [
+        {
+          "type" : "library",
+          "author" : "OWASP Foundation",
+          "group" : "org.cyclonedx",
+          "name" : "cyclonedx-maven-plugin",
+          "version" : "2.9.1",
+          "description" : "CycloneDX Maven plugin",
+          "hashes" : [
+            {
+              "alg" : "MD5",
+              "content" : "9c7a565cf28cce58557d0c621c5ea4b1"
+            },
+            {
+              "alg" : "SHA-1",
+              "content" : "be882d5a22050bfa9d19090b1420c188617d0e1c"
+            },
+            {
+              "alg" : "SHA-256",
+              "content" : "698e0f37184a5b28c245c4065fd036dfce253b52f82fbb7113d81d36326cc249"
+            },
+            {
+              "alg" : "SHA-512",
+              "content" : "c0f0b11026858166f872a2eb54719492e5cecaa0bc9cd6b30b3ecb4a174eed220f4a1b5829d18d6734128e778d3cb3db7ffed177c92866133129cb29081814a0"
+            },
+            {
+              "alg" : "SHA-384",
+              "content" : "d80964707dfe5caca8c70521d5066f57589304c0a657e6fbc7c0614ea0fc7b3b3dbe7778361eee0f54ba111e9cb0ffcb"
+            },
+            {
+              "alg" : "SHA3-384",
+              "content" : "80bc3a275d9514bc457461ff52a72add8c7ecbbc01d8912efce57139016c544ee776981851be0a58fa977ab4221f703f"
+            },
+            {
+              "alg" : "SHA3-256",
+              "content" : "142317d6f245390f4fd2d0c100b16281b8dfc5c0c2cff86943bdcc97039cb699"
+            },
+            {
+              "alg" : "SHA3-512",
+              "content" : "af0fb9137c90b65d1a07f72e4d51ae509956cdb8800f35c961b037cdda1fe4a14ce3b496cef71ba85f1621affcfe29cd42704ae4191ff0b090a9602087c8997b"
+            }
+          ]
+        }
+      ]
+    },
+    "component" : {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-runtime-jinfer@1.0.2?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-runtime-jinfer",
+      "version" : "1.0.2",
+      "description" : "Optional Java 25+ RuntimeProvider over Quixotic JInfer. Core never depends on this module.",
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-runtime-jinfer@1.0.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/runtimes/cortexj-runtime-jinfer"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/runtimes/cortexj-runtime-jinfer"
+        }
+      ]
+    },
+    "properties" : [
+      {
+        "name" : "maven.goal",
+        "value" : "makeBom"
+      },
+      {
+        "name" : "maven.scopes",
+        "value" : "compile,provided,runtime,system"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-api@1.0.2?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-api",
+      "version" : "1.0.2",
+      "description" : "Shared public API, Java 8 baseline. No framework or runtime engine dependencies (AP-001, AP-002).",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "0ba831e2edbf5dd9a7b494139459dbfc"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "75c982db93165ac24f96da65016a0b3fc5ffcf57"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "ac0b139506379c773aa6273d1204c9c6268d5d7b17c4ad0ec43b1174b47a1deb"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "6c35c9e33e26afd814e8a4eb954a4a4df8cdee427bdb7be988cf6272eb78b5da4fb85807dd41c4319a93b2a5013b540bea00cd473708fa9c7da436d9331a76a1"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "15ff2938f12018a1164efb1d0b854372575809733dc02bcc1edf811320651273d440e3a0c2f8ace199a0371c7ae7ba63"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "aa608ddb0661cba9a8437108b121f6ad8f10aebcad1a17cd22480cf98999e870165be791bb78d8848a8721e11fcaf83d"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "3b4486cdc59fe894a7e6b09cfc69ab57c4aecfc270dcbcb94edf00900c51ddce"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "ac3bcdd01130d562dbf72c13fc0ced4d1e98e1b317b0e02d1f3970e32ef1fedd5be905a728420782d7dd699abb56ec7d2fd89b11b04d74e483766472e8da9198"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-api@1.0.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-api"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-spi@1.0.2?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-spi",
+      "version" : "1.0.2",
+      "description" : "CortexJ - AI runtime orchestration and model portability platform for the JVM",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "8db396f49bfec0d7a6685c523443065d"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "5d999a28c904dd8fd8d7a0f3ed93f2555cd9629d"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "357a7731657acf48cd658ff2578b3bc86fae44f6141daac9df2afd60d2bd6ff9"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "6d80aabf17b6a68eb069e4dd73b667d310ced3646b3f589db05638d2e20a4c4c4be4a5599efe06cae683fe5687bd4b9e209a1062083a6f1cc04c0cfc76989035"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "def4fa74b9b07bb7c17b88b839bcceb682b685e63e9b748c05126ebfe10d458e6dd8d4609009a8e3f14b0d76466bc59a"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "10a88f9ac0330b253ac906c2ab710e1cb15954b84f9502f6b34240f0764d8127fb2888f27066715bf3f3b8b387e8e5a7"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "a55cd787303e4c19c8fd2c4f0e06822bb55666582066be0c8e1012528f57b04b"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "6591d2a52496131aa904abdcdb487d210c52a22359ab64d59f10cf597a42bc1d2a28bfb9e582c586f7f7e9d63a982b0344ddf4cdded7f248491c9fbb0e23b4f1"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-spi@1.0.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-spi"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-spi"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.cortexj/cortexj-model@1.0.2?type=jar",
+      "group" : "io.cortexj",
+      "name" : "cortexj-model",
+      "version" : "1.0.2",
+      "description" : "CortexJ - AI runtime orchestration and model portability platform for the JVM",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "d91dfff96626ec5a5b9ff5f00350fd68"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "9ea71e8caf9247247e8f6f00bd2a8accdbe402d5"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "8f7ef5c74e0a1842217eae1956926abd26552cbcb52c5334f169531110944f84"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "592d8ed4ae98c31dd49c03f91b010eab0e4fcc29cc8cd0270e9aa659fdab1cd407aaa36a2122bf968b1a0141fd1522e7aa4cb26a8d9db66683c2919f6eee4274"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "4b2875fd3a99519e23c0f2bde46adf1bfa0a6aece438665648b9e3636a158e855b2b919635c3e6798a98afb81aadd964"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "3e4d5e59c5a034e1c2c688fb2be0a8ff008058d080645051bc368844e90e1b090a824bc989938064356978f14960dd18"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "4941f9ea3e0f3c4e1b08ffeaedb4bb4d8640b37f64bffd4588533cfe24ead59b"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "2b63e9a92fd4115f67c8ca3206d9b25434e3a209cd0c64efcf087b3cd995fb1941798c7ee48763415945927162c26b616ecb2b47dd15e05397bc7cc90311308b"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.cortexj/cortexj-model@1.0.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-model"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "file:///Users/oleg/NikitaProjects/CortexJ/target/pages-repo"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/okostiukevych/CortexJ/cortexj-model"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.qxotic/jinfer-chat@0.3.1?type=jar",
+      "publisher" : "Quixotic AI",
+      "group" : "com.qxotic",
+      "name" : "jinfer-chat",
+      "version" : "0.3.1",
+      "description" : "Chat messages, prompt templates, and structured response parsing for Jinfer.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "f423d853fef1a7175a6fa8e589ae8065"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "7a08c33eb50a3fd017f3ac86975931171d7fe62a"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "ec58abe6f4c6eb3c44a994890ad8393255361fc5a745023cf72484841fb27388"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "60aeb4cf552a00fcf29bf562716364805b8dcd9233135e53cd05d3408c8a95da95219ce79a615af7090b27b0d80478ded61f0f9e5123872b077991f1bb340dbf"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "39354763e16b62480f453268d2d847bfa31782b66794ccd832fd236684c13b40ed901dcf90cec50fbc0f574f4f6f34dc"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "928f2ff4dba40e0bfed167ba252c92b74a00247fde18fea5494685aadf104c6628a6bf48b254a9449397e0f48052fa10"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "dd9c5d3ff24e96727cf6a189e488438865c5cf0ad98c7c5ebb82930f22c776e4"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "ed5765564b06a9f30d7be93e3274c8e22c368925cae1cab398a801498e63c9cd5b70a7c96314991aa118aeb82d40b781465a6f1e67402dab9b66342b8d95aa9e"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.qxotic/jinfer-chat@0.3.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://qxotic.ai"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/qxoticai/qxotic/actions"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/qxoticai/qxotic/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qxoticai/qxotic"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.qxotic/jota-core@0.3.1?type=jar",
+      "publisher" : "Quixotic AI",
+      "group" : "com.qxotic",
+      "name" : "jota-core",
+      "version" : "0.3.1",
+      "description" : "Foundational Jota data types: devices, shapes, strides, and layouts.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "8b6546d5ef974e544d78e26b9c83fee7"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "8e4867587c08378bc0902b024aa893efb2f8b484"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "0a8b546e0722357b68b6429654144891b1599c452e3ec1085bcb0c4555591091"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "0e3de4972e08825d285238370b40131a1406fe05e44345c8b4ebf4fd6deaea989223be0d35c4ffeeee9a2badad0b36d798486c5a1732084be162b803c2ce817e"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "67a5df35d399aab5f75b66adaf9b519ddeec8f8ecb86b8f2ba799bfc9a96cbeebd2db7cb16066eb456af1dbaa4f4beeb"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "b0cf7c87f265408d3687aca9629066bd28c0bc3c6441b8a2b023b2fc377c1ba72d24b42a3f60ff8168b0f3931cea9920"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "d2f29fc3f98bffaf93430765793dab3a1cca187b5b5bbf78406b7066d06221dc"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "e4825128e1cb29358793c1064047a6979db2af6a72515d2a6a5cf0853e267dac1df27c636c02968bd3a725006774b00cf52cc1704148fee3f0520fec088112cf"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.qxotic/jota-core@0.3.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://qxotic.ai"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/qxoticai/qxotic/actions"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/qxoticai/qxotic/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qxoticai/qxotic"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.qxotic/jota-memory@0.3.1?type=jar",
+      "publisher" : "Quixotic AI",
+      "group" : "com.qxotic",
+      "name" : "jota-memory",
+      "version" : "0.3.1",
+      "description" : "Memory allocation, views, access, and transfer APIs for Jota.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "f49cf62a05827e952e98f31d98916b38"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "c152e06c922c4c43bca693f71c913b70bb96500a"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "17562fcb57361c48156360530e746e62ce18ad99154dec30ffc6e1048424e8b2"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "e36717bad0842194c5f1336b8e90ae051640043f317a9753b993c9d83f4d92ebb3c8d3c9fa92a81f4a41a13a7df05a5a0d5365f0a07ddd34bf96fd6b0fb85bf5"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "6ec8e063cebcac44d4f29eb4e5744f5f6bfa37136e2cb88316155efe2db673162292fe3d837702966ab3bd48f4e29862"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "5206db6e930122e2f45c04c8f4f7015a07f2dfde6c0a5980d5f7b5ca397ed72ee67d99d7e93a7149ec4a2a4702ba70ec"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "65ef474f334f3c90aeddc85d242920185a1613a895323212740aaac8277e239e"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "6235dfaaf1121da8ca55ad035f0b0c26b188c31a6b865c89eb955e18562a667c410ee67f4f0a481ecf3b1df36b3c188ee40df39a1382e89079397a5e14e93a5d"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.qxotic/jota-memory@0.3.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://qxotic.ai"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/qxoticai/qxotic/actions"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/qxoticai/qxotic/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qxoticai/qxotic"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.qxotic/jinfer-core@0.3.1?type=jar",
+      "publisher" : "Quixotic AI",
+      "group" : "com.qxotic",
+      "name" : "jinfer-core",
+      "version" : "0.3.1",
+      "description" : "Core model APIs, execution, memory management, and telemetry for Jinfer.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "3b95f3e263fb3f3fc6a8b93d353e4891"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "3082b5759f329349ae254feef46a4e1df7e35f5a"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "bd5d2283b646cb82e1d8e16a975b09ffd8d9b0a32bd8a670d6023f7f1d6bf143"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "34cc3206d9d33e345f2d3b07970d1a5b2690e550c8380afffce199233fa32daa4f4a0f2ca6e288cf95453022a84168bbb7d98f1b9a28ec0258c676c2642034c3"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "ac3dc334a7ed49d771f5def3db04a7312f918a656ac9e71c7097d4d2753d9b05ab9167ff7d65872da3d9c01ddf7fc41c"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "e764ce6f3a7fc214a6373b953083e568448d05cdce0569f01bdd2e440e3f6d3679be88a70a50955bcf4f608d5cff617e"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "19aa98552170691546055c633390f2ee6478b1853a2b9358c05583ebde54d354"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "740616d8d89c9b4ad72d2e16c3dcc45e6062b44927ae0f9c308f498c7dc27cbb3834284eaf758af9e848357348158400b4f50adcbe36c56e7fbe058b8f503ff1"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.qxotic/jinfer-core@0.3.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://qxotic.ai"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/qxoticai/qxotic/actions"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/qxoticai/qxotic/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qxoticai/qxotic"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.qxotic/jinfer-codecs@0.3.1?type=jar",
+      "publisher" : "Quixotic AI",
+      "group" : "com.qxotic",
+      "name" : "jinfer-codecs",
+      "version" : "0.3.1",
+      "description" : "Media decoding for Jinfer image, audio, and video inputs, and espeak-ng grapheme-to-phoneme, on the JVM and in native images.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "ae0a8167f696ece32eb26f62fecd199c"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "11843fa1ad6940981ff0d7b9c39f268d909e1141"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "4e9689aa0bcc90fec62036c81a9e7a5488414736317016610218137f65e3d5ab"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "fbd701dfe94a7dcc477adacc7a90c5a6c61e2678253f99c85c29b38924fb63c39a62e142f23137dfd4a6a0a6f0b1e3f0921d10d9afd89db66f3d5d51a6e97707"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "6729ed79c3c3f3ed74a7b87acc3f7132323305fd5257c26e179455c00ab5fb3ce9601ab921bdcb7c030c70acc09d94c8"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "f408483638116b0b070e261f3ba11958b7af7f210e79b1718f6e8ee6295ac8364839427c0eaead4dfbf64ec2e4efc3b3"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "60ac7689a1d44bf590738749675c3da5b42cc51e4cd06011536ae0045433b2ef"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "b4837c44a19399d7a64f413d1d8a9eeab28ba240c47e845131d8bb2e347517dc91590a86ea6330768d243d88197ea2a1b2510fe4a737906b38767e1d220c725f"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.qxotic/jinfer-codecs@0.3.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://qxotic.ai"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/qxoticai/qxotic/actions"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/qxoticai/qxotic/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qxoticai/qxotic"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.qxotic/jinfer-kernels@0.3.1?type=jar",
+      "publisher" : "Quixotic AI",
+      "group" : "com.qxotic",
+      "name" : "jinfer-kernels",
+      "version" : "0.3.1",
+      "description" : "Compute kernels and GGUF tensor loading for Jinfer model providers.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "21a163176b8f1b5c13e32e3d8659ccc4"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "4c19b3acbb2e4e98d83e93c636c46ea50e11533e"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "23faa41d4aa3d21f9b18e635b4db256ee63a7b0fba7d395acc81ae233929cae3"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "6c25620dc6a79e570a0bf5143ce75608a42e5fecb0f8d32e86b778c77e4ca9243c550c6810300a755018e0fe52151b740a7b868f1c778f6a083041eaaecf3533"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "ec0e792c5b183c730c6c5d257073e5233823af6aca22e8c1abf07eb5a037d6842d71b4eca9b88191206f4595e5661c47"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "e4f38fe392ea3959061014c2d27c6cdf9344acf8029a049abb447b0db8117a9bb1f6d2a63ebfc4846d8222ae6633b811"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "cba0aab724c5a301a50d5564ee798235591a9b34ff699788e05e30fe36c66559"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "40224a25fb1f252f38061e2e8ca4831177a7251125bf95eac41f32c028798fa0aa58418bb40eed9e89078aa4722dac906dca9ff8f6c59b036527118bb9766599"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.qxotic/jinfer-kernels@0.3.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://qxotic.ai"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/qxoticai/qxotic/actions"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/qxoticai/qxotic/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qxoticai/qxotic"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.qxotic/jam-core@0.3.1?type=jar",
+      "publisher" : "Quixotic AI",
+      "group" : "com.qxotic",
+      "name" : "jam-core",
+      "version" : "0.3.1",
+      "description" : "Core API for quantized matrix multiplication with JAM.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "5ff6e1ebd96511fcdfeee0e17c505ec8"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "8942b026df968bf09b7f7f14c5bfa13fa180f696"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "9cb4d0718a17817d44ba676b38af39e4f2a7a965160869bfa950874e0199bce0"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "7b1d30d16184743a84fe46bfdd273cd0555b06b7356391b3e62cfbb2c073adcfd2c1c3ffa2eb3efd4866af84af4d9be8c74f05ca45880585382382b1411eba06"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "1604f6b3751953b3d3508da7f35fa304bcdbf0019a0bf25a13227d6b48d72103f0ac0ae20386d3a639e29af29aa873bb"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "6eaf7a49126ec7ddef491a32fea04db68622a6e68ee83135e5e79a8939779d093c0463a91be462b2891652547c7157e0"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "1d472138470ef57d93c79251e5d9c477483643116056afa57afbff5de142c6ad"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "1e96530cbba85abe23cc59b824bb507392ccf23c8a8dcb0f61e4a5e05d6baf54da6747f3d7238afdeac5b92230100560ee92a41b3d8fed00977542437acb4392"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.qxotic/jam-core@0.3.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://qxotic.ai"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/qxoticai/qxotic/actions"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/qxoticai/qxotic/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qxoticai/qxotic"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.qxotic/jinfer-cache@0.3.1?type=jar",
+      "publisher" : "Quixotic AI",
+      "group" : "com.qxotic",
+      "name" : "jinfer-cache",
+      "version" : "0.3.1",
+      "description" : "Persistent, memory-bounded prompt caching for Jinfer models.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "a11b064b21652e5abd8e43f2b44a1d99"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "89b8e25afeb182a35116918779a572b46d90fe95"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "ef18c2d44345ac8a966b4f8876846b35d6c4fcd78d007cb6fa0eb814b52559a5"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "c816cb12983ba5009af45dd6ed45e9f63cdb72b0e77b66f948507a2c645186b906a4124700b6f6e9f38955d544d71415dc303a72c68b9ec4633d022652e63cba"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "16f867a6b4a8b9fef825561895f2e4833053ea97436bc450ac86abc93d89104d35a90ac01964e94147e4ec1782a52d8d"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "087db9f9e0608925dab85a41e74e13b574b068d3135c59bfbed6fe306146ece7e32b8fcde9ea8ada991627e4d93eb2ce"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "7f2242d582d091e4bf9fa5c6b0bfefb27db34381ea016092baac88c865b9a8b7"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "8493b68b1a14d02e51252c95611361ef60a0532ff954abbe4aec7224e8a192e0a26a518ac6606ab0ba4cc80f90efead0ddd0c2ff0aba54574c40149b42e0dfee"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.qxotic/jinfer-cache@0.3.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://qxotic.ai"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/qxoticai/qxotic/actions"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/qxoticai/qxotic/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qxoticai/qxotic"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.qxotic/toknroll-core@0.3.1?type=jar",
+      "publisher" : "Quixotic AI",
+      "group" : "com.qxotic",
+      "name" : "toknroll-core",
+      "version" : "0.3.1",
+      "description" : "Customizable tiktoken-compatible and SentencePiece BPE tokenization for language models.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "cb3e147b3e44d69a45f5b38237fcb6bb"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "bdf84a35f3c6f90d4cbf9fd1676ff755099f33d5"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "c0bcf137d0231a19301d1a8f11c5736040e66c179939caf04e8293d5aa9a050e"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "bbe9c568801a9bcb1a99a4635b5a347d678faca95ec218081d44e586b0fe7bcb6ed95a5c8d2c2b695a519c39e1b0c51b46cb7efcec936c776e424ae7bdbe7001"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "5503c3159619afd3ff2dd1dffa1645f94626ff86ee981bcbe7e3d702b06f1fbdbdb7a490ccbca766ed7729d540a6d940"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "56384d0f8acfbc55b094de8967d366282812cf2a49ba117199c7dffbaefafa0a53db7a596b9dfd64bc115396ddbac79b"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "7efd176c39085b22acd0326d0211fdb48a6d827266be9b589a22d8315a011810"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "b2b092343838b2f23387382f7c451d32374aad24cdfcd08d10990b00df899a4ebb600e77a8246bd04fbd7de0c6ec4ccbae473df4808e12608d11ab48ef0b962d"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.qxotic/toknroll-core@0.3.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://qxotic.ai"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/qxoticai/qxotic/actions"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/qxoticai/qxotic/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qxoticai/qxotic"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.qxotic/gguf@0.3.1?type=jar",
+      "publisher" : "Quixotic AI",
+      "group" : "com.qxotic",
+      "name" : "gguf",
+      "version" : "0.3.1",
+      "description" : "Java library for reading and writing GGUF metadata and tensor descriptors for llama.cpp model files.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "2965f4fd053ef94f6d4af04c0ff0e096"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1ca314f77267d80a0d64682a3830c78e6ebdc499"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "eab8762fb1669952067f26069842b18e81ef3679c00f76c55e7e488307e900e0"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "7919524562c0707376f88e70fa10388a70c81509622557ec46ccbfd8b05140930ef75dcbe22d4369e530d03f1c86ee25ed44727708ac12319b83305f8fa99141"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "e5edf42cf1cd1bea450776d183d94a97383967c3a6d7285c4ada418a84b5ae778e1f2f3adf6a556171824095734e521d"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "aa9bf39c4b2f43d3d311575e579d478ba355ce74677fa73f65eec352f4e0dea0bc6e70fadd67c31cb86f0dab40ec818c"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "0e65a53cf18e7f0d4eb51fe883859e24189fbe6d0d8a1cfaca38ec8828efa0cc"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "5e0024811a3cc04c197ab660fd74e5b828ed85220a4368d2e2e4b689548919cbccc0729b2fc7f8149754f0489d95a13e7005ea62f6d743237f01cef991255173"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.qxotic/gguf@0.3.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://qxotic.ai"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/qxoticai/qxotic/actions"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/qxoticai/qxotic/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qxoticai/qxotic"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.qxotic/jinfer-jinja@0.3.1?type=jar",
+      "publisher" : "Quixotic AI",
+      "group" : "com.qxotic",
+      "name" : "jinfer-jinja",
+      "version" : "0.3.1",
+      "description" : "Standalone Jinja chat-template rendering for Java.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "625293c4c64936b1ac4a87ba2aff2947"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "7e2d3ba7592ad7e50b36b976b36422d17d9b4c72"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "5899a172c63630b0692c926a57292346e4ecb580061e1539a79170e2d994820a"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "4aa3dbb0104c8f1e4c05e565c2b3d4322e84bc7e6c04a8a7e82948ac6673cdf01c1f1de33cfb114d6a166f23b4f81e44107160383a63c531c1cb5113a05fd133"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "9391b750b4e8d4a33b0d9a23793f551246ebc5d1adddcf24123758e88f6ea233dfb74dc7d3d9e4eee915fb3e43b81b87"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "8d1606d131547905c2be3efbc93d6ecba9e319b51353e19761f4a63441a9cc918d5d6a46414c33cf3eb773a1d188bf71"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "b0f32a7b64635c0a74cd7c3136ca25eb3ec969744a76f88341bf8dee926b4d02"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "e48094babbd0419c5658cda84d706ac4b063c862c2755d991bfcfdf4c3560d1c9a20741bcbd08d6f8e2b855cbe392c60e7762e4d94cfce9df692694200bd4f3e"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.qxotic/jinfer-jinja@0.3.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://qxotic.ai"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/qxoticai/qxotic/actions"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/qxoticai/qxotic/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qxoticai/qxotic"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.qxotic/json@0.2.0?type=jar",
+      "publisher" : "Quixotic AI",
+      "group" : "com.qxotic",
+      "name" : "json",
+      "version" : "0.2.0",
+      "description" : "Strict RFC 8259-compliant JSON parser and writer for Java.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "15b1063f6ad5f6d486b5f2eb42040493"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "fe2d70b94d6c173e5a15ed86d3b85f1aef09c127"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "1293ea0b7c06790ea5005d444922f263d3ac8b8a6973696e0a0d5d12d5a5bc57"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "318e391d2c9f38c3af0dcc8a48c13fb65f6319444e0ccaa8c197dacc26bf96fc1cb87bde35b5a3b557a2b92e232b00fb533cc26f58ca6ec42965ac6a1414444e"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "b9eecbd62e69bcfee78188804befaebb8653a70909939276d197c9db9b7f2ee00c16d8af77206fc4a6a6695de039826e"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "73d592681d6bb955e990e8bf338558aec032eade40098cf952e5f356f44dcf689888b443c0d1d7e9f1713f3527b8db2f"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "f6b1e52e0606ef4c395b1154794a4b0bb7a157ba3a6e038a463c792d8bf15334"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "2e73dc07c94a2373e6b7bc97ee431be56bfb07518980d1cc911becdd3212002ce6356a4f42ee10b05bef7d0eb64de9eb7846a1b9f95351663855bec4dca2bed2"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.qxotic/json@0.2.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://qxotic.ai"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/qxoticai/qxotic/actions"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/qxoticai/qxotic/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qxoticai/qxotic"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-runtime-jinfer@1.0.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-api@1.0.2?type=jar",
+        "pkg:maven/io.cortexj/cortexj-spi@1.0.2?type=jar",
+        "pkg:maven/io.cortexj/cortexj-model@1.0.2?type=jar",
+        "pkg:maven/com.qxotic/jinfer-chat@0.3.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-api@1.0.2?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-spi@1.0.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-api@1.0.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.cortexj/cortexj-model@1.0.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.cortexj/cortexj-api@1.0.2?type=jar",
+        "pkg:maven/io.cortexj/cortexj-spi@1.0.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.qxotic/jinfer-chat@0.3.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.qxotic/jota-core@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/jota-memory@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/jinfer-core@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/jinfer-codecs@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/jinfer-kernels@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/jinfer-cache@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/toknroll-core@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/gguf@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/jinfer-jinja@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/json@0.2.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.qxotic/jota-core@0.3.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.qxotic/jota-memory@0.3.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.qxotic/jota-core@0.3.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.qxotic/jinfer-core@0.3.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.qxotic/jota-core@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/jota-memory@0.3.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.qxotic/jinfer-codecs@0.3.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.qxotic/jinfer-core@0.3.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.qxotic/jinfer-kernels@0.3.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.qxotic/jota-core@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/jota-memory@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/jinfer-core@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/gguf@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/jam-core@0.3.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.qxotic/gguf@0.3.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.qxotic/jam-core@0.3.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.qxotic/jinfer-cache@0.3.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.qxotic/jota-core@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/jota-memory@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/jinfer-core@0.3.1?type=jar",
+        "pkg:maven/com.qxotic/toknroll-core@0.3.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.qxotic/toknroll-core@0.3.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.qxotic/jinfer-jinja@0.3.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.qxotic/json@0.2.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.qxotic/json@0.2.0?type=jar",
+      "dependsOn" : [ ]
+    }
+  ]
+}
